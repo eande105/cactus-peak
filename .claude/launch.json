@@ -34,20 +34,6 @@
         "3200"
       ],
       "port": 3200
-    },
-    {
-      "name": "brand-files",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": [
-        "-m",
-        "http.server",
-        "8480",
-        "--bind",
-        "127.0.0.1",
-        "--directory",
-        "/Users/ethanhanderson/Library/CloudStorage/OneDrive-ArizonaStateUniversity/git480/Senior Project - Cactus Peak Athletic/Brand Identity"
-      ],
-      "port": 8480
     }
   ]
 }
