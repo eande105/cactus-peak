@@ -1,0 +1,128 @@
+name: CactusPeak
+options:
+  bundleIdPrefix: com.cactuspeak
+  deploymentTarget:
+    iOS: "27.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: false
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: 2.55.0
+configFiles:
+  Debug: Config/App.xcconfig
+  Release: Config/App.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGNING_ALLOWED: "YES"
+    CODE_SIGNING_REQUIRED: "NO"
+    DEVELOPMENT_TEAM: ""
+    TARGETED_DEVICE_FAMILY: "1,2"
+    ENABLE_USER_SCRIPT_SANDBOXING: "YES"
+    SWIFT_STRICT_CONCURRENCY: complete
+    GENERATE_INFOPLIST_FILE: "NO"
+schemes:
+  CactusPeak:
+    build:
+      targets:
+        CactusPeak: all
+        CactusPeakWidgets: all
+    test:
+      targets: [CactusPeakTests]
+    run:
+      config: Debug
+      commandLineArguments: {}
+    archive:
+      config: Release
+targets:
+  CactusPeak:
+    type: application
+    platform: iOS
+    sources:
+      - path: CactusPeak
+      - path: Shared
+    dependencies:
+      - target: CactusPeakWidgets
+        embed: true
+      - package: Supabase
+        product: Supabase
+    entitlements:
+      path: CactusPeak/CactusPeak.entitlements
+      properties:
+        com.apple.security.application-groups: ["group.com.cactuspeak.member"]
+    info:
+      path: CactusPeak/Info.plist
+      properties:
+        CFBundleDisplayName: Cactus Peak
+        CFBundleName: Cactus Peak
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIAppFonts: ["Archivo-VF.ttf"]
+        NSSupportsLiveActivities: true
+        NSSupportsLiveActivitiesFrequentUpdates: false
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        CFBundleURLTypes:
+          - CFBundleURLName: com.cactuspeak.member
+            CFBundleURLSchemes: [cactuspeak]
+        NSLocationWhenInUseUsageDescription: "Find the nearest club and show your pass when you arrive. We only use your location while the app is open."
+        NSCalendarsWriteOnlyAccessUsageDescription: "Add your classes to your calendar."
+        NSFaceIDUsageDescription: "Confirm it is you before showing billing details."
+        ITSAppUsesNonExemptEncryption: false
+        SupabaseURL: "https://$(SUPABASE_HOST)"
+        SupabasePublishableKey: "$(SUPABASE_PUBLISHABLE_KEY)"
+        DemoPassword: "$(DEMO_PASSWORD)"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cactuspeak.member
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_FILE: CactusPeak/Info.plist
+        CODE_SIGN_ENTITLEMENTS: CactusPeak/CactusPeak.entitlements
+  CactusPeakWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CactusPeakWidgets
+      - path: Shared
+    entitlements:
+      path: CactusPeakWidgets/CactusPeakWidgets.entitlements
+      properties:
+        com.apple.security.application-groups: ["group.com.cactuspeak.member"]
+    info:
+      path: CactusPeakWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Cactus Peak
+        CFBundleName: CactusPeakWidgets
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UIAppFonts: ["Archivo-VF.ttf"]
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cactuspeak.member.widgets
+        INFOPLIST_FILE: CactusPeakWidgets/Info.plist
+        CODE_SIGN_ENTITLEMENTS: CactusPeakWidgets/CactusPeakWidgets.entitlements
+        SKIP_INSTALL: "YES"
+  CactusPeakTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [CactusPeakTests]
+    dependencies:
+      - target: CactusPeak
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cactuspeak.member.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/CactusPeak.app/CactusPeak"
+        BUNDLE_LOADER: "$(TEST_HOST)"

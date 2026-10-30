@@ -1,0 +1,3738 @@
+{
+ "categories": [
+  {
+   "id": "strength",
+   "name": "Strength",
+   "blurb": "Barbells, kettlebells, coached lifts"
+  },
+  {
+   "id": "cycle",
+   "name": "Cycle",
+   "blurb": "Hills, rhythm and endurance on the bike"
+  },
+  {
+   "id": "conditioning",
+   "name": "Conditioning",
+   "blurb": "Intervals, running and bootcamp"
+  },
+  {
+   "id": "mind-body",
+   "name": "Mind & Body",
+   "blurb": "Yoga, pilates and breath work"
+  },
+  {
+   "id": "aqua",
+   "name": "Aqua",
+   "blurb": "Lap swim, aqua fit and swim school"
+  },
+  {
+   "id": "court",
+   "name": "Court",
+   "blurb": "Pickleball, tennis and hoops"
+  },
+  {
+   "id": "recovery",
+   "name": "Recovery",
+   "blurb": "Mobility, stretching and contrast therapy"
+  },
+  {
+   "id": "youth",
+   "name": "Youth",
+   "blurb": "Kids club, teen strength and juniors"
+  }
+ ],
+ "plans": {
+  "trailhead": {
+   "id": "trailhead",
+   "name": "Trailhead",
+   "price": 54,
+   "window": 7,
+   "guestPasses": 0,
+   "blurb": "One home club",
+   "perks": [
+    "One home club",
+    "Classes and pools at that club",
+    "Booking 7 days ahead"
+   ]
+  },
+  "ridge": {
+   "id": "ridge",
+   "name": "Ridge",
+   "price": 79,
+   "window": 7,
+   "guestPasses": 1,
+   "blurb": "All 5 clubs",
+   "perks": [
+    "All 5 clubs",
+    "All classes",
+    "Courts, 3 days ahead",
+    "1 guest pass per month",
+    "7-day booking"
+   ]
+  },
+  "summit": {
+   "id": "summit",
+   "name": "Summit",
+   "price": 129,
+   "window": 9,
+   "guestPasses": 4,
+   "blurb": "Ridge plus recovery",
+   "perks": [
+    "Everything in Ridge",
+    "Recovery suite",
+    "9-day booking",
+    "4 guest passes per month",
+    "Towel service",
+    "1 PT intro session per quarter"
+   ]
+  }
+ },
+ "ptPacks": [
+  {
+   "sessions": 4,
+   "price": 276
+  },
+  {
+   "sessions": 8,
+   "price": 520
+  },
+  {
+   "sessions": 12,
+   "price": 732
+  }
+ ],
+ "clubs": [
+  {
+   "id": "c1",
+   "slug": "mesa-dobson",
+   "name": "Mesa – Dobson",
+   "city": "Mesa",
+   "neighborhood": "Dobson",
+   "address": "Dobson Rd & Southern Ave, Mesa",
+   "type": "Flagship · 68,000 sq ft",
+   "sqft": 68000,
+   "personality": "The big one. Bring the whole family.",
+   "phone": "(480) 555-0114",
+   "zip": "85202",
+   "amenities": [
+    "25-yd lap pool, 8 lanes",
+    "Warm-water therapy pool",
+    "4 pickleball courts",
+    "2 tennis courts",
+    "Recovery suite",
+    "3 studios + cycle studio",
+    "Kids club",
+    "Café"
+   ],
+   "pool": {
+    "label": "25-yard lap pool",
+    "lanes": 8,
+    "unit": "yd",
+    "therapy": true
+   },
+   "courts": [
+    {
+     "sport": "pickleball",
+     "count": 4
+    },
+    {
+     "sport": "tennis",
+     "count": 2
+    }
+   ],
+   "kidsClub": true,
+   "recovery": "suite",
+   "scene": "pool",
+   "photo": "Dobson, 25-yd pool at 6 a.m., low sun through the east glass",
+   "parking": "Free lot on the east side.",
+   "lat": 33.384,
+   "lng": -111.874,
+   "typical": [
+    1,
+    2,
+    3,
+    4,
+    3,
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    3,
+    4,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "weekend": [
+    1,
+    1,
+    2,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "studios": [
+    "Studio A",
+    "Studio B",
+    "Cycle Studio",
+    "Pool"
+   ]
+  },
+  {
+   "id": "c2",
+   "slug": "mesa-red-mountain",
+   "name": "Mesa – Red Mountain",
+   "city": "Mesa",
+   "neighborhood": "Red Mountain",
+   "address": "Power Rd & McKellips Rd, Mesa",
+   "type": "Full club · 52,000 sq ft",
+   "sqft": 52000,
+   "personality": "Sunrise over the Superstitions, every morning.",
+   "phone": "(480) 555-0127",
+   "zip": "85207",
+   "amenities": [
+    "Outdoor 25-m pool, shade sails",
+    "6 pickleball courts",
+    "Turf lane",
+    "2 studios + cycle studio",
+    "Kids club",
+    "Superstition-view cardio deck"
+   ],
+   "pool": {
+    "label": "25-metre outdoor pool",
+    "lanes": 8,
+    "unit": "m",
+    "outdoor": true
+   },
+   "courts": [
+    {
+     "sport": "pickleball",
+     "count": 6
+    }
+   ],
+   "kidsClub": true,
+   "recovery": "none",
+   "scene": "outdoor-pool",
+   "photo": "Red Mountain, cardio deck at sunrise, the Superstitions in the glass",
+   "parking": "Shaded lot on the west side.",
+   "lat": 33.447,
+   "lng": -111.69,
+   "typical": [
+    2,
+    3,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    4,
+    4,
+    5,
+    3,
+    2,
+    1
+   ],
+   "weekend": [
+    1,
+    1,
+    2,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "studios": [
+    "Studio A",
+    "Studio B",
+    "Cycle Studio",
+    "Pool",
+    "Turf"
+   ]
+  },
+  {
+   "id": "c3",
+   "slug": "mesa-downtown",
+   "name": "Mesa – Downtown",
+   "city": "Mesa",
+   "neighborhood": "Downtown",
+   "address": "Main St & Center St, Mesa",
+   "type": "Studio club · 18,000 sq ft",
+   "sqft": 18000,
+   "personality": "In and out before your 8 a.m.",
+   "phone": "(480) 555-0139",
+   "zip": "85201",
+   "amenities": [
+    "Strength floor",
+    "2 studios + cycle studio",
+    "Recovery lounge (sauna, compression)"
+   ],
+   "pool": null,
+   "courts": [],
+   "kidsClub": false,
+   "recovery": "lounge",
+   "scene": "lift",
+   "photo": "Downtown, strength floor at 5:30 a.m., chalk in the air",
+   "parking": "Garage on Center St, first 2 hours free.",
+   "lat": 33.415,
+   "lng": -111.832,
+   "typical": [
+    2,
+    3,
+    4,
+    5,
+    3,
+    2,
+    2,
+    2,
+    3,
+    3,
+    2,
+    3,
+    4,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "weekend": [
+    1,
+    1,
+    2,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "studios": [
+    "Studio A",
+    "Studio B",
+    "Cycle Studio"
+   ]
+  },
+  {
+   "id": "c4",
+   "slug": "gilbert-val-vista",
+   "name": "Gilbert – Val Vista",
+   "city": "Gilbert",
+   "neighborhood": "Val Vista",
+   "address": "Val Vista Dr & Warner Rd, Gilbert",
+   "type": "Full club · 60,000 sq ft",
+   "sqft": 60000,
+   "personality": "Swim school, courts, and a kids club that kids ask for.",
+   "phone": "(480) 555-0142",
+   "zip": "85233",
+   "amenities": [
+    "25-yd lap pool, 6 lanes",
+    "Splash pad",
+    "Swim school",
+    "2 basketball courts",
+    "4 pickleball courts",
+    "Recovery suite",
+    "3 studios + cycle studio",
+    "Kids club"
+   ],
+   "pool": {
+    "label": "25-yard lap pool",
+    "lanes": 6,
+    "unit": "yd"
+   },
+   "courts": [
+    {
+     "sport": "pickleball",
+     "count": 4
+    },
+    {
+     "sport": "basketball",
+     "count": 2
+    }
+   ],
+   "kidsClub": true,
+   "recovery": "suite",
+   "scene": "studio",
+   "photo": "Val Vista, cycle studio at dawn, rows of bikes facing a tall window",
+   "parking": "Free lot on the north side.",
+   "lat": 33.336,
+   "lng": -111.76,
+   "typical": [
+    1,
+    2,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    4,
+    5,
+    5,
+    3,
+    2,
+    1
+   ],
+   "weekend": [
+    1,
+    1,
+    2,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "studios": [
+    "Studio A",
+    "Studio B",
+    "Cycle Studio",
+    "Pool",
+    "Court"
+   ]
+  },
+  {
+   "id": "c5",
+   "slug": "gilbert-heritage",
+   "name": "Gilbert – Heritage",
+   "city": "Gilbert",
+   "neighborhood": "Heritage",
+   "address": "Gilbert Rd & Page Ave, Gilbert",
+   "type": "Studio club · 22,000 sq ft",
+   "sqft": 22000,
+   "personality": "Lifting platforms and a rooftop at golden hour.",
+   "phone": "(480) 555-0156",
+   "zip": "85234",
+   "amenities": [
+    "Strength floor",
+    "Olympic lifting platforms",
+    "2 studios + cycle studio",
+    "Recovery lounge",
+    "Rooftop mobility deck"
+   ],
+   "pool": null,
+   "courts": [],
+   "kidsClub": false,
+   "recovery": "lounge",
+   "scene": "rooftop",
+   "photo": "Heritage, rooftop mobility deck at golden hour, palo verde in the corner",
+   "parking": "Street parking and a rear lot.",
+   "lat": 33.354,
+   "lng": -111.79,
+   "typical": [
+    1,
+    1,
+    3,
+    4,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "weekend": [
+    1,
+    1,
+    2,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "studios": [
+    "Studio A",
+    "Studio B",
+    "Cycle Studio",
+    "Rooftop"
+   ]
+  }
+ ],
+ "instructors": [
+  {
+   "id": "marisol",
+   "name": "Marisol Vega",
+   "role": "Cycle",
+   "years": 8,
+   "clubs": [
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "tomas",
+   "name": "Tomás Reyes",
+   "role": "Strength",
+   "years": 6,
+   "clubs": [
+    "mesa-downtown",
+    "gilbert-heritage",
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "aisha",
+   "name": "Aisha Brooks",
+   "role": "Mind & Body",
+   "years": 5,
+   "clubs": [
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "kenji",
+   "name": "Kenji Ito",
+   "role": "Conditioning",
+   "years": 7,
+   "clubs": [
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "dana",
+   "name": "Dana Whitfield",
+   "role": "Aqua",
+   "years": 9,
+   "clubs": [
+    "mesa-dobson",
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "luis",
+   "name": "Luis Ortega",
+   "role": "Court",
+   "years": 4,
+   "clubs": [
+    "mesa-red-mountain",
+    "gilbert-val-vista",
+    "mesa-dobson"
+   ]
+  },
+  {
+   "id": "hannah",
+   "name": "Hannah Cole",
+   "role": "Youth",
+   "years": 3,
+   "clubs": [
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "ruth",
+   "name": "Ruth Nakamura",
+   "role": "Recovery and mobility",
+   "years": 10,
+   "clubs": [
+    "mesa-dobson",
+    "gilbert-val-vista",
+    "gilbert-heritage"
+   ]
+  },
+  {
+   "id": "devon",
+   "name": "Devon Hart",
+   "role": "Cycle",
+   "years": 4,
+   "clubs": [
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "jamal",
+   "name": "Jamal Carter",
+   "role": "Cycle",
+   "years": 6,
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain"
+   ]
+  },
+  {
+   "id": "elise",
+   "name": "Elise Moreno",
+   "role": "Mind & Body",
+   "years": 7,
+   "clubs": [
+    "mesa-downtown",
+    "mesa-dobson",
+    "mesa-red-mountain"
+   ]
+  },
+  {
+   "id": "owen",
+   "name": "Owen Kim",
+   "role": "Conditioning",
+   "years": 5,
+   "clubs": [
+    "mesa-downtown",
+    "mesa-dobson",
+    "mesa-red-mountain"
+   ]
+  },
+  {
+   "id": "lena",
+   "name": "Lena Ortiz",
+   "role": "Cycle",
+   "years": 3,
+   "clubs": [
+    "gilbert-heritage",
+    "mesa-downtown"
+   ]
+  },
+  {
+   "id": "gabe",
+   "name": "Gabe Santos",
+   "role": "Swim school",
+   "years": 6,
+   "clubs": [
+    "gilbert-val-vista"
+   ]
+  },
+  {
+   "id": "hector",
+   "name": "Hector Vance",
+   "role": "Masters swim",
+   "years": 11,
+   "clubs": [
+    "mesa-dobson",
+    "gilbert-val-vista",
+    "mesa-red-mountain"
+   ]
+  },
+  {
+   "id": "tessa",
+   "name": "Tessa Lund",
+   "role": "Strength",
+   "years": 5,
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain"
+   ]
+  }
+ ],
+ "coaches": [
+  {
+   "id": "sam",
+   "slug": "sam-okafor",
+   "name": "Sam Okafor",
+   "specialties": [
+    "Return to training",
+    "Strength"
+   ],
+   "tags": [
+    "Return to training",
+    "Strength"
+   ],
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain"
+   ],
+   "since": 2014,
+   "about": "I help people come back after surgery or a long break. We start with what your body can do today. No lectures.",
+   "goodFor": [
+    "Returning after injury",
+    "Knee and hip",
+    "First-time training",
+    "Over 50"
+   ],
+   "firstSession": [
+    "10 minutes talking",
+    "25 minutes moving",
+    "10 minutes plan"
+   ],
+   "openTimes": [
+    {
+     "dow": 2,
+     "time": "09:30"
+    },
+    {
+     "dow": 4,
+     "time": "09:30"
+    },
+    {
+     "dow": 4,
+     "time": "10:15"
+    },
+    {
+     "dow": 4,
+     "time": "13:00"
+    },
+    {
+     "dow": 4,
+     "time": "16:30"
+    },
+    {
+     "dow": 5,
+     "time": "10:15"
+    },
+    {
+     "dow": 6,
+     "time": "08:00"
+    },
+    {
+     "dow": 2,
+     "time": "13:00"
+    }
+   ]
+  },
+  {
+   "id": "elena",
+   "slug": "elena-duarte",
+   "name": "Elena Duarte",
+   "specialties": [
+    "Olympic lifting",
+    "Barbell strength"
+   ],
+   "tags": [
+    "Olympic lifting",
+    "Strength"
+   ],
+   "clubs": [
+    "gilbert-heritage",
+    "mesa-downtown"
+   ],
+   "since": 2016,
+   "about": "Snatch, clean and jerk, taught in small pieces. Bring your current lifts. We build from there.",
+   "goodFor": [
+    "Learning the Olympic lifts",
+    "Barbell technique",
+    "Strength plateaus"
+   ],
+   "firstSession": [
+    "10 minutes goals and history",
+    "30 minutes technique",
+    "5 minutes plan"
+   ],
+   "openTimes": [
+    {
+     "dow": 3,
+     "time": "06:30"
+    },
+    {
+     "dow": 3,
+     "time": "17:30"
+    },
+    {
+     "dow": 5,
+     "time": "06:30"
+    },
+    {
+     "dow": 1,
+     "time": "06:30"
+    },
+    {
+     "dow": 6,
+     "time": "09:00"
+    }
+   ]
+  },
+  {
+   "id": "marcus",
+   "slug": "marcus-hale",
+   "name": "Marcus Hale",
+   "specialties": [
+    "Swim technique",
+    "Masters swim"
+   ],
+   "tags": [
+    "Swim"
+   ],
+   "clubs": [
+    "gilbert-val-vista",
+    "mesa-dobson"
+   ],
+   "since": 2012,
+   "about": "Most swimmers are one fix away from a faster, easier lap. We film your stroke and fix the biggest thing first.",
+   "goodFor": [
+    "Adult learn-to-swim",
+    "Stroke fixes",
+    "Triathlon swims"
+   ],
+   "firstSession": [
+    "10 minutes goals",
+    "30 minutes in the water",
+    "5 minutes homework"
+   ],
+   "openTimes": [
+    {
+     "dow": 5,
+     "time": "07:15"
+    },
+    {
+     "dow": 5,
+     "time": "08:15"
+    },
+    {
+     "dow": 2,
+     "time": "07:15"
+    },
+    {
+     "dow": 6,
+     "time": "07:00"
+    },
+    {
+     "dow": 3,
+     "time": "17:45"
+    }
+   ]
+  },
+  {
+   "id": "rosa",
+   "slug": "rosa-lindgren",
+   "name": "Rosa Lindgren",
+   "specialties": [
+    "Mobility",
+    "Pickleball conditioning",
+    "Older adults"
+   ],
+   "tags": [
+    "Mobility",
+    "Pickleball"
+   ],
+   "clubs": [
+    "mesa-red-mountain"
+   ],
+   "since": 2018,
+   "about": "Pickleball is a lot of lunging. I build the hips, ankles and shoulders that let you play four mornings a week.",
+   "goodFor": [
+    "Pickleball players",
+    "Older adults",
+    "Balance and mobility"
+   ],
+   "firstSession": [
+    "10 minutes movement screen",
+    "25 minutes work",
+    "10 minutes plan"
+   ],
+   "openTimes": [
+    {
+     "dow": 3,
+     "time": "09:00"
+    },
+    {
+     "dow": 3,
+     "time": "10:00"
+    },
+    {
+     "dow": 5,
+     "time": "09:00"
+    },
+    {
+     "dow": 1,
+     "time": "11:00"
+    }
+   ]
+  },
+  {
+   "id": "jake",
+   "slug": "jake-whitcomb",
+   "name": "Jake Whitcomb",
+   "specialties": [
+    "Youth and teen athletic development"
+   ],
+   "tags": [
+    "Youth and teen"
+   ],
+   "clubs": [
+    "gilbert-val-vista"
+   ],
+   "since": 2019,
+   "about": "Teens get stronger by learning to move well first. Parents are welcome to watch the first session.",
+   "goodFor": [
+    "Ages 13 to 17",
+    "School sports",
+    "First time in a weight room"
+   ],
+   "firstSession": [
+    "10 minutes goals",
+    "30 minutes movement",
+    "5 minutes plan"
+   ],
+   "openTimes": [
+    {
+     "dow": 4,
+     "time": "16:00"
+    },
+    {
+     "dow": 2,
+     "time": "16:00"
+    },
+    {
+     "dow": 6,
+     "time": "10:00"
+    },
+    {
+     "dow": 3,
+     "time": "16:30"
+    }
+   ]
+  }
+ ],
+ "classTypes": {
+  "rrs": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Water",
+    "Towel",
+    "Lifting shoes optional"
+   ],
+   "key": "rrs",
+   "name": "Rib Rack Strength",
+   "category": "strength",
+   "duration": 60,
+   "intensity": 4,
+   "capacity": 14,
+   "about": "Squat, press, pull. Five lifts built on one rack, coached in small groups. Pick your own weight; the coach sets the tempo."
+  },
+  "bb": {
+   "unit": "spots",
+   "firstTimerOk": true,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "bb",
+   "name": "Barbell Basics",
+   "category": "strength",
+   "duration": 60,
+   "intensity": 2,
+   "capacity": 12,
+   "about": "Learn the bar. Hips, hinge, press and row with a light barbell and plenty of cues. A good first strength class."
+  },
+  "kf": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "kf",
+   "name": "Kettlebell Flow",
+   "category": "strength",
+   "duration": 45,
+   "intensity": 3,
+   "capacity": 16,
+   "about": "Swings, carries and getups linked into one flowing circuit. Light bells are fine."
+  },
+  "ofl": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Lifting shoes",
+    "Chalk is provided"
+   ],
+   "key": "ofl",
+   "name": "Olympic Lifting Club",
+   "category": "strength",
+   "duration": 75,
+   "intensity": 4,
+   "capacity": 10,
+   "about": "Open coaching on the platforms. Bring a plan or ask for one. Heritage only."
+  },
+  "cc": {
+   "unit": "bikes",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Towel",
+    "Cycling shoes optional"
+   ],
+   "key": "cc",
+   "name": "Climb Cycle",
+   "category": "cycle",
+   "duration": 45,
+   "intensity": 4,
+   "capacity": 20,
+   "about": "Hills, not hype. Climb Cycle follows a mountain profile: warm-up, three climbs, a long descent. Set your own resistance. Nobody checks."
+  },
+  "ride": {
+   "unit": "bikes",
+   "firstTimerOk": false,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "ride",
+   "name": "Rhythm Ride",
+   "category": "cycle",
+   "duration": 45,
+   "intensity": 3,
+   "capacity": 20,
+   "about": "Ride to the beat. Steady cadence, lots of seated work, and a playlist you can feel in your legs."
+  },
+  "e60": {
+   "unit": "bikes",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 14,
+   "bring": [
+    "Water",
+    "Towel",
+    "Cycling shoes optional"
+   ],
+   "key": "e60",
+   "name": "Endurance 60",
+   "category": "cycle",
+   "duration": 60,
+   "intensity": 3,
+   "capacity": 18,
+   "about": "One hour of aerobic work at a pace you can hold. Good Saturday legs."
+  },
+  "sbh": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "sbh",
+   "name": "Switchback HIIT",
+   "category": "conditioning",
+   "duration": 30,
+   "intensity": 5,
+   "capacity": 20,
+   "about": "Thirty minutes of work and rest, in switchbacks. Intervals scale to you. All-out means your all-out."
+  },
+  "crc": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": true,
+   "minAge": 14,
+   "bring": [
+    "Water",
+    "Running shoes"
+   ],
+   "key": "crc",
+   "name": "Canal Run Club",
+   "category": "conditioning",
+   "duration": 45,
+   "intensity": 3,
+   "capacity": 25,
+   "about": "Out and back on the canal path. Three paces, one meeting point, nobody left behind."
+  },
+  "bc": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "bc",
+   "name": "Bootcamp",
+   "category": "conditioning",
+   "duration": 45,
+   "intensity": 4,
+   "capacity": 22,
+   "about": "Stations, sleds and a friendly drill sergeant who also says please."
+  },
+  "dfy": {
+   "unit": "mats",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Mat if you prefer your own"
+   ],
+   "key": "dfy",
+   "name": "Desert Flow Yoga",
+   "category": "mind-body",
+   "duration": 60,
+   "intensity": 2,
+   "capacity": 20,
+   "about": "A slow vinyasa with long holds. Mats and blocks are provided. Finish with five quiet minutes."
+  },
+  "mp": {
+   "unit": "mats",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "mp",
+   "name": "Mat Pilates",
+   "category": "mind-body",
+   "duration": 50,
+   "intensity": 2,
+   "capacity": 18,
+   "about": "Core, hips and posture on the mat. Small movements, done well."
+  },
+  "bw": {
+   "unit": "mats",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "bw",
+   "name": "Breathwork",
+   "category": "mind-body",
+   "duration": 30,
+   "intensity": 1,
+   "capacity": 20,
+   "about": "Thirty minutes lying down, breathing on purpose. Quiet room, no pretzels."
+  },
+  "af": {
+   "unit": "spots",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 14,
+   "bring": [
+    "Swimsuit",
+    "Towel",
+    "Water"
+   ],
+   "key": "af",
+   "name": "Aqua Fit",
+   "category": "aqua",
+   "duration": 45,
+   "intensity": 2,
+   "capacity": 16,
+   "about": "Low-impact cardio in the pool. Easy on knees and hips, harder than it looks."
+  },
+  "ms": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 18,
+   "bring": [
+    "Swimsuit",
+    "Goggles",
+    "Pull buoy"
+   ],
+   "key": "ms",
+   "name": "Masters Swim",
+   "category": "aqua",
+   "duration": 60,
+   "intensity": 4,
+   "capacity": 12,
+   "about": "Coached lap sets for adult swimmers. Three lanes by pace. Bring a pull buoy."
+  },
+  "ss": {
+   "unit": "spots",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 4,
+   "bring": [
+    "Swimsuit",
+    "Towel",
+    "Goggles"
+   ],
+   "key": "ss",
+   "name": "Swim School",
+   "category": "aqua",
+   "duration": 30,
+   "intensity": 2,
+   "capacity": 8,
+   "about": "Small-group lessons for children 4 to 12, grouped by level. A parent stays on the deck."
+  },
+  "pcl": {
+   "unit": "spots",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 14,
+   "bring": [
+    "Court shoes",
+    "Water"
+   ],
+   "key": "pcl",
+   "name": "Pickleball Clinic",
+   "category": "court",
+   "duration": 90,
+   "intensity": 3,
+   "capacity": 12,
+   "about": "Drills for the dink, the third shot and where to stand. Paddles are provided."
+  },
+  "pop": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": true,
+   "minAge": 14,
+   "bring": [
+    "Court shoes",
+    "Paddle"
+   ],
+   "key": "pop",
+   "name": "Pickleball Open Play",
+   "category": "court",
+   "duration": 120,
+   "intensity": 3,
+   "capacity": 24,
+   "about": "Drop in and rotate. Courts are sorted by level. Paddle rack by the door."
+  },
+  "td": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 14,
+   "bring": [
+    "Racquet",
+    "Court shoes"
+   ],
+   "key": "td",
+   "name": "Tennis Drills",
+   "category": "court",
+   "duration": 60,
+   "intensity": 3,
+   "capacity": 12,
+   "about": "Forehands, backhands and footwork with a coach and a hopper of balls."
+  },
+  "hr": {
+   "unit": "spots",
+   "firstTimerOk": false,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Court shoes",
+    "Water"
+   ],
+   "key": "hr",
+   "name": "Hoops Run",
+   "category": "court",
+   "duration": 90,
+   "intensity": 4,
+   "capacity": 20,
+   "about": "Full-court pickup, refereed lightly. Winners stay on."
+  },
+  "m30": {
+   "unit": "mats",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "m30",
+   "name": "Mobility 30",
+   "category": "recovery",
+   "duration": 30,
+   "intensity": 1,
+   "capacity": 24,
+   "about": "Thirty minutes of hips, shoulders and spine. The class you take after the class you took."
+  },
+  "sr": {
+   "unit": "mats",
+   "firstTimerOk": true,
+   "teenOk": false,
+   "minAge": 16,
+   "bring": [
+    "Water",
+    "Towel"
+   ],
+   "key": "sr",
+   "name": "Stretch & Release",
+   "category": "recovery",
+   "duration": 30,
+   "intensity": 1,
+   "capacity": 20,
+   "about": "Long stretches with foam rollers and bands. Recovery for the legs you used yesterday."
+  },
+  "ts": {
+   "unit": "spots",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 13,
+   "bring": [
+    "Water",
+    "Closed-toe shoes"
+   ],
+   "key": "ts",
+   "name": "Teen Strength",
+   "category": "youth",
+   "duration": 60,
+   "intensity": 3,
+   "capacity": 12,
+   "about": "Strength basics for ages 13 to 17. Movement first, weight second. Coached by Hannah Cole."
+  },
+  "jp": {
+   "unit": "spots",
+   "firstTimerOk": true,
+   "teenOk": true,
+   "minAge": 8,
+   "bring": [
+    "Court shoes"
+   ],
+   "key": "jp",
+   "name": "Junior Pickleball",
+   "category": "youth",
+   "duration": 60,
+   "intensity": 2,
+   "capacity": 8,
+   "about": "Ages 8 to 14. Small courts, soft balls, loud cheering."
+  }
+ },
+ "schedules": {
+  "gilbert-val-vista": [
+   [
+    "rrs",
+    "05:30",
+    "1235",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "rrs",
+    "06:00",
+    "4",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "cc",
+    "06:00",
+    "12345",
+    "Cycle Studio",
+    "marisol"
+   ],
+   [
+    "cc",
+    "07:00",
+    "12345",
+    "Cycle Studio",
+    "devon",
+    3
+   ],
+   [
+    "cc",
+    "08:00",
+    "6",
+    "Cycle Studio",
+    "marisol"
+   ],
+   [
+    "ms",
+    "05:30",
+    "135",
+    "Pool",
+    "hector"
+   ],
+   [
+    "af",
+    "09:00",
+    "1234",
+    "Pool",
+    "dana"
+   ],
+   [
+    "dfy",
+    "09:30",
+    "123456",
+    "Studio A",
+    "aisha"
+   ],
+   [
+    "mp",
+    "10:30",
+    "135",
+    "Studio A",
+    "aisha"
+   ],
+   [
+    "pop",
+    "10:00",
+    "1356",
+    "Court",
+    "luis"
+   ],
+   [
+    "sbh",
+    "12:00",
+    "12345",
+    "Studio B",
+    "kenji"
+   ],
+   [
+    "dfy",
+    "12:00",
+    "5",
+    "Studio A",
+    "aisha"
+   ],
+   [
+    "ss",
+    "16:00",
+    "1234",
+    "Pool",
+    "gabe"
+   ],
+   [
+    "dfy",
+    "16:30",
+    "2",
+    "Studio A",
+    "aisha"
+   ],
+   [
+    "ts",
+    "16:30",
+    "23",
+    "Studio B",
+    "hannah"
+   ],
+   [
+    "ride",
+    "17:30",
+    "1245",
+    "Cycle Studio",
+    "devon"
+   ],
+   [
+    "m30",
+    "17:30",
+    "12345",
+    "Studio A",
+    "ruth"
+   ],
+   [
+    "kf",
+    "18:30",
+    "134",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "sbh",
+    "08:00",
+    "6",
+    "Studio B",
+    "kenji",
+    5
+   ],
+   [
+    "m30",
+    "09:00",
+    "0",
+    "Studio A",
+    "ruth"
+   ],
+   [
+    "dfy",
+    "09:00",
+    "0",
+    "Studio A",
+    "aisha"
+   ],
+   [
+    "e60",
+    "09:00",
+    "0",
+    "Cycle Studio",
+    "devon"
+   ],
+   [
+    "crc",
+    "07:00",
+    "6",
+    "Court",
+    "kenji"
+   ],
+   [
+    "bb",
+    "17:30",
+    "3",
+    "Studio B",
+    "tomas"
+   ]
+  ],
+  "mesa-dobson": [
+   [
+    "ms",
+    "05:30",
+    "135",
+    "Pool",
+    "hector"
+   ],
+   [
+    "cc",
+    "06:00",
+    "12345",
+    "Cycle Studio",
+    "jamal"
+   ],
+   [
+    "rrs",
+    "06:00",
+    "135",
+    "Studio B",
+    "tessa"
+   ],
+   [
+    "af",
+    "09:00",
+    "1235",
+    "Pool",
+    "dana"
+   ],
+   [
+    "dfy",
+    "09:30",
+    "12345",
+    "Studio A",
+    "elise"
+   ],
+   [
+    "m30",
+    "11:00",
+    "2346",
+    "Studio A",
+    "ruth"
+   ],
+   [
+    "pcl",
+    "08:30",
+    "246",
+    "Court",
+    "luis"
+   ],
+   [
+    "sbh",
+    "12:00",
+    "12345",
+    "Studio B",
+    "owen"
+   ],
+   [
+    "e60",
+    "08:00",
+    "6",
+    "Cycle Studio",
+    "jamal"
+   ],
+   [
+    "ride",
+    "17:30",
+    "1245",
+    "Cycle Studio",
+    "jamal"
+   ],
+   [
+    "sr",
+    "18:00",
+    "135",
+    "Studio A",
+    "ruth"
+   ],
+   [
+    "dfy",
+    "09:00",
+    "0",
+    "Studio A",
+    "elise"
+   ]
+  ],
+  "mesa-red-mountain": [
+   [
+    "pcl",
+    "08:00",
+    "1234",
+    "Court",
+    "luis"
+   ],
+   [
+    "pop",
+    "09:30",
+    "2456",
+    "Court",
+    "luis"
+   ],
+   [
+    "cc",
+    "05:45",
+    "135",
+    "Cycle Studio",
+    "jamal"
+   ],
+   [
+    "rrs",
+    "06:00",
+    "246",
+    "Studio B",
+    "tessa"
+   ],
+   [
+    "af",
+    "09:00",
+    "1235",
+    "Pool",
+    "hector"
+   ],
+   [
+    "dfy",
+    "09:30",
+    "12345",
+    "Studio A",
+    "elise"
+   ],
+   [
+    "bc",
+    "06:30",
+    "24",
+    "Turf",
+    "owen"
+   ],
+   [
+    "sbh",
+    "12:15",
+    "1235",
+    "Studio B",
+    "owen"
+   ],
+   [
+    "m30",
+    "17:30",
+    "134",
+    "Studio A",
+    "elise"
+   ],
+   [
+    "crc",
+    "07:30",
+    "6",
+    "Turf",
+    "owen"
+   ]
+  ],
+  "mesa-downtown": [
+   [
+    "rrs",
+    "05:30",
+    "12345",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "cc",
+    "06:00",
+    "12345",
+    "Cycle Studio",
+    "lena"
+   ],
+   [
+    "cc",
+    "08:00",
+    "6",
+    "Cycle Studio",
+    "lena",
+    4
+   ],
+   [
+    "sbh",
+    "06:30",
+    "135",
+    "Studio A",
+    "owen"
+   ],
+   [
+    "dfy",
+    "07:00",
+    "24",
+    "Studio A",
+    "elise"
+   ],
+   [
+    "bb",
+    "12:00",
+    "24",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "kf",
+    "12:15",
+    "135",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "ride",
+    "17:30",
+    "1245",
+    "Cycle Studio",
+    "lena"
+   ],
+   [
+    "m30",
+    "18:30",
+    "134",
+    "Studio A",
+    "elise"
+   ]
+  ],
+  "gilbert-heritage": [
+   [
+    "ofl",
+    "05:30",
+    "135",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "cc",
+    "06:00",
+    "12345",
+    "Cycle Studio",
+    "lena"
+   ],
+   [
+    "rrs",
+    "06:00",
+    "246",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "m30",
+    "07:00",
+    "12345",
+    "Rooftop",
+    "ruth"
+   ],
+   [
+    "dfy",
+    "09:00",
+    "246",
+    "Studio A",
+    "elise"
+   ],
+   [
+    "bb",
+    "17:30",
+    "135",
+    "Studio B",
+    "tomas"
+   ],
+   [
+    "ride",
+    "17:30",
+    "24",
+    "Cycle Studio",
+    "lena"
+   ],
+   [
+    "sr",
+    "18:30",
+    "123",
+    "Rooftop",
+    "ruth"
+   ],
+   [
+    "e60",
+    "08:00",
+    "6",
+    "Cycle Studio",
+    "lena"
+   ]
+  ]
+ },
+ "faq": [
+  {
+   "group": "Booking and cancelling",
+   "items": [
+    {
+     "q": "How far ahead can I book?",
+     "a": "Classes open 7 days ahead (Summit: 9 days) at 6:00 a.m. Arizona time on the opening day. Courts open 3 days ahead."
+    },
+    {
+     "q": "How do late cancels work?",
+     "a": "Cancel free up to 2 hours before start. Later counts as a late cancel. Three late cancels in 30 days pause new class, court and lane booking for 3 days. A no-show counts as a late cancel. Kids club has no strikes."
+    },
+    {
+     "q": "What happens when a class is full?",
+     "a": "Join the waitlist (up to 5 at once). When a spot opens you get a push and 30 minutes to tap Confirm spot. We stop moving people up 1 hour before class; after that, open spots show as drop-in spots."
+    }
+   ]
+  },
+  {
+   "group": "Courts and lanes",
+   "items": [
+    {
+     "q": "How do court reservations work?",
+     "a": "Courts come with Ridge and Summit. Reserve 60 or 90 minutes, up to 3 days ahead. One court per day and two active at a time. Cancel free until 2 hours before."
+    },
+    {
+     "q": "Can I share a lane?",
+     "a": "Yes. Up to 2 swimmers share a lane, in circle swim. Lane slots are 45 minutes. Lap lanes have no waitlist."
+    }
+   ]
+  },
+  {
+   "group": "Kids club",
+   "items": [
+    {
+     "q": "Who can go to kids club?",
+     "a": "Children from 6 months to 12 years. Blocks are 2 hours, Monday to Saturday. A parent checks in at the same club and stays in the club. An unclaimed block is released 15 minutes after it starts."
+    }
+   ]
+  },
+  {
+   "group": "Billing",
+   "items": [
+    {
+     "q": "When am I charged?",
+     "a": "On your billing day each month. The $49 annual facility fee is charged in March. If a payment fails we retry on day 3 and day 6, and you keep full access through day 7."
+    }
+   ]
+  },
+  {
+   "group": "Membership",
+   "items": [
+    {
+     "q": "How do I freeze?",
+     "a": "Freeze for 1, 2 or 3 months at $10 per month. A freeze starts on the first billing date at least 30 days after you ask."
+    },
+    {
+     "q": "How do I cancel?",
+     "a": "Cancel from Membership with 30 days' notice. You keep full access until the end date and can keep your membership with one click until then."
+    }
+   ]
+  },
+  {
+   "group": "Guest passes",
+   "items": [
+    {
+     "q": "Who can I bring?",
+     "a": "Guests are 18 or older, or 16 and 17 with a parent or guardian waiver. A pass is good for one visit at one club and lasts 14 days. Ridge includes 1 per month, Summit 4."
+    }
+   ]
+  }
+ ],
+ "demoStart": 1793104800000,
+ "state": {
+  "v": 4,
+  "clock": {
+   "realStart": 1793104800000,
+   "skew": 0
+  },
+  "signedIn": false,
+  "currentMemberId": "maya",
+  "members": {
+   "maya": {
+    "id": "maya",
+    "householdId": "h1",
+    "role": "primary",
+    "firstName": "Maya",
+    "lastName": "Brandt",
+    "dob": "1992-04-18",
+    "age": 34,
+    "email": "maya@example.com",
+    "memberNumber": "CP-004-182-337",
+    "homeClub": "gilbert-val-vista",
+    "status": "active",
+    "hue": 18
+   },
+   "chris": {
+    "id": "chris",
+    "householdId": "h1",
+    "role": "adult",
+    "firstName": "Chris",
+    "lastName": "Brandt",
+    "dob": "1990-09-02",
+    "age": 36,
+    "email": "chris@example.com",
+    "memberNumber": "CP-004-182-338",
+    "homeClub": "gilbert-val-vista",
+    "status": "active",
+    "hue": 200
+   },
+   "theo": {
+    "id": "theo",
+    "householdId": "h1",
+    "role": "child",
+    "firstName": "Theo",
+    "lastName": "Brandt",
+    "dob": "2017-03-02",
+    "age": 9,
+    "email": "theo@example.com",
+    "memberNumber": "CP-004-182-339",
+    "homeClub": "gilbert-val-vista",
+    "status": "active",
+    "hue": 140,
+    "allergyNotes": "Peanuts. EpiPen is in his bag.",
+    "pickup": [
+     "maya",
+     "chris"
+    ]
+   },
+   "ivy": {
+    "id": "ivy",
+    "householdId": "h1",
+    "role": "child",
+    "firstName": "Ivy",
+    "lastName": "Brandt",
+    "dob": "2020-05-21",
+    "age": 6,
+    "email": "ivy@example.com",
+    "memberNumber": "CP-004-182-340",
+    "homeClub": "gilbert-val-vista",
+    "status": "active",
+    "hue": 320,
+    "pickup": [
+     "maya",
+     "chris"
+    ]
+   },
+   "alicia": {
+    "id": "alicia",
+    "householdId": "h2",
+    "role": "primary",
+    "firstName": "Alicia",
+    "lastName": "Ramos",
+    "dob": "1984-02-11",
+    "age": 42,
+    "email": "alicia@example.com",
+    "memberNumber": "CP-007-310-118",
+    "homeClub": "gilbert-val-vista",
+    "status": "active",
+    "hue": 260
+   },
+   "jordan": {
+    "id": "jordan",
+    "householdId": "h2",
+    "role": "teen",
+    "firstName": "Jordan",
+    "lastName": "Ramos",
+    "dob": "2010-06-23",
+    "age": 16,
+    "email": "jordan@example.com",
+    "memberNumber": "CP-007-310-119",
+    "homeClub": "gilbert-val-vista",
+    "status": "active",
+    "hue": 100,
+    "parentId": "alicia",
+    "permissions": {
+     "classes": true,
+     "courts": false,
+     "lanes": false,
+     "coachMessages": true
+    }
+   },
+   "daniel": {
+    "id": "daniel",
+    "householdId": "h3",
+    "role": "primary",
+    "firstName": "Daniel",
+    "lastName": "Whitaker",
+    "dob": "1974-07-09",
+    "age": 52,
+    "email": "daniel@example.com",
+    "memberNumber": "CP-002-440-871",
+    "homeClub": "mesa-dobson",
+    "status": "active",
+    "hue": 40
+   },
+   "ron": {
+    "id": "ron",
+    "householdId": "h4",
+    "role": "primary",
+    "firstName": "Ron",
+    "lastName": "Park",
+    "dob": "1960-01-30",
+    "age": 66,
+    "email": "ron@example.com",
+    "memberNumber": "CP-003-218-506",
+    "homeClub": "mesa-red-mountain",
+    "status": "active",
+    "hue": 220
+   },
+   "linda": {
+    "id": "linda",
+    "householdId": "h4",
+    "role": "adult",
+    "firstName": "Linda",
+    "lastName": "Park",
+    "dob": "1963-05-14",
+    "age": 63,
+    "email": "linda@example.com",
+    "memberNumber": "CP-003-218-507",
+    "homeClub": "mesa-red-mountain",
+    "status": "active",
+    "hue": 340
+   }
+  },
+  "households": {
+   "h1": {
+    "id": "h1",
+    "primaryId": "maya",
+    "plan": "ridge",
+    "billingDay": 12,
+    "memberSince": 1741071600000,
+    "status": "active",
+    "card": {
+     "brand": "visa",
+     "last4": "4821",
+     "expMonth": 11,
+     "expYear": 26
+    },
+    "invoices": [
+     {
+      "id": "INV-20261012-156",
+      "date": 1791799200000,
+      "desc": "Ridge + family, Oct 12–Nov 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260920-20",
+      "date": 1789898400000,
+      "desc": "Guest pass",
+      "kind": "guest",
+      "amount": 20,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Guest pass",
+        "amount": 20
+       }
+      ]
+     },
+     {
+      "id": "INV-20260912-156",
+      "date": 1789207200000,
+      "desc": "Ridge + family, Sep 12–Oct 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260812-156",
+      "date": 1786528800000,
+      "desc": "Ridge + family, Aug 12–Sep 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260803-520",
+      "date": 1785751200000,
+      "desc": "Training pack, 8 sessions",
+      "kind": "training",
+      "amount": 520,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Training pack, 8 sessions",
+        "amount": 520
+       }
+      ]
+     },
+     {
+      "id": "INV-20260712-156",
+      "date": 1783850400000,
+      "desc": "Ridge + family, Jul 12–Aug 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260612-156",
+      "date": 1781258400000,
+      "desc": "Ridge + family, Jun 12–Jul 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260512-156",
+      "date": 1778580000000,
+      "desc": "Ridge + family, May 12–Jun 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260412-156",
+      "date": 1775988000000,
+      "desc": "Ridge + family, Apr 12–May 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260312-156",
+      "date": 1773309600000,
+      "desc": "Ridge + family, Mar 12–Apr 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260301-49",
+      "date": 1772359200000,
+      "desc": "Annual facility fee",
+      "kind": "fee",
+      "amount": 49,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Annual facility fee",
+        "amount": 49
+       }
+      ]
+     },
+     {
+      "id": "INV-20260212-156",
+      "date": 1770890400000,
+      "desc": "Ridge + family, Feb 12–Mar 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     },
+     {
+      "id": "INV-20260112-156",
+      "date": 1768212000000,
+      "desc": "Ridge + family, Jan 12–Feb 11",
+      "kind": "membership",
+      "amount": 156,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       },
+       {
+        "label": "Child add-ons, 2 × $19.00",
+        "amount": 38
+       }
+      ]
+     }
+    ],
+    "ptIntroLeft": 0,
+    "guestPassesBought": 0,
+    "billingName": "Maya Brandt",
+    "billingAddress": "1840 E Lindsay Rd, Gilbert, AZ 85234",
+    "receiptEmail": "maya@example.com",
+    "ptPack": {
+     "total": 8,
+     "used": 3,
+     "expiresOn": 1817276400000
+    }
+   },
+   "h2": {
+    "id": "h2",
+    "primaryId": "alicia",
+    "plan": "ridge",
+    "billingDay": 12,
+    "memberSince": 1749711600000,
+    "status": "active",
+    "card": {
+     "brand": "mastercard",
+     "last4": "0937",
+     "expMonth": 4,
+     "expYear": 28
+    },
+    "invoices": [
+     {
+      "id": "INV-20261012-156",
+      "date": 1791799200000,
+      "desc": "Ridge + teen",
+      "kind": "membership",
+      "amount": 98,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Teen add-on",
+        "amount": 19
+       }
+      ]
+     },
+     {
+      "id": "INV-20260920-20",
+      "date": 1789898400000,
+      "desc": "Guest pass",
+      "kind": "guest",
+      "amount": 98,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Teen add-on",
+        "amount": 19
+       }
+      ]
+     },
+     {
+      "id": "INV-20260912-156",
+      "date": 1789207200000,
+      "desc": "Ridge + teen",
+      "kind": "membership",
+      "amount": 98,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Teen add-on",
+        "amount": 19
+       }
+      ]
+     },
+     {
+      "id": "INV-20260812-156",
+      "date": 1786528800000,
+      "desc": "Ridge + teen",
+      "kind": "membership",
+      "amount": 98,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Teen add-on",
+        "amount": 19
+       }
+      ]
+     }
+    ],
+    "ptIntroLeft": 0,
+    "guestPassesBought": 0,
+    "billingName": "Alicia Ramos",
+    "billingAddress": "922 N Val Vista Dr, Gilbert, AZ 85234",
+    "receiptEmail": "alicia@example.com"
+   },
+   "h3": {
+    "id": "h3",
+    "primaryId": "daniel",
+    "plan": "trailhead",
+    "billingDay": 14,
+    "memberSince": 1789369200000,
+    "status": "active",
+    "card": {
+     "brand": "visa",
+     "last4": "1189",
+     "expMonth": 8,
+     "expYear": 28
+    },
+    "invoices": [
+     {
+      "id": "INV-DW-1",
+      "date": 1791972000000,
+      "desc": "Trailhead, Oct 14–Nov 13",
+      "kind": "membership",
+      "amount": 54,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Trailhead",
+        "amount": 54
+       }
+      ]
+     }
+    ],
+    "ptIntroLeft": 0,
+    "guestPassesBought": 0,
+    "billingName": "Daniel Whitaker",
+    "billingAddress": "310 W Brown Rd, Mesa, AZ 85201",
+    "receiptEmail": "daniel@example.com"
+   },
+   "h4": {
+    "id": "h4",
+    "primaryId": "ron",
+    "plan": "ridge",
+    "billingDay": 5,
+    "memberSince": 1707116400000,
+    "status": "active",
+    "card": {
+     "brand": "amex",
+     "last4": "3005",
+     "expMonth": 2,
+     "expYear": 29
+    },
+    "invoices": [
+     {
+      "id": "INV-RP-1",
+      "date": 1791194400000,
+      "desc": "Ridge ×2, Oct 5–Nov 4",
+      "kind": "membership",
+      "amount": 118,
+      "status": "paid",
+      "lines": [
+       {
+        "label": "Ridge",
+        "amount": 79
+       },
+       {
+        "label": "Adult add-on",
+        "amount": 39
+       }
+      ]
+     }
+    ],
+    "ptIntroLeft": 0,
+    "guestPassesBought": 0,
+    "billingName": "Ron Park",
+    "billingAddress": "1411 E Ivyglen St, Mesa, AZ 85203",
+    "receiptEmail": "ron@example.com"
+   }
+  },
+  "bookings": [
+   {
+    "id": "b1",
+    "ref": "CP-9D3M1",
+    "createdAt": 1792932000000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793106000000,
+    "end": 1793108700000,
+    "title": "Climb Cycle",
+    "category": "cycle",
+    "place": "Cycle Studio",
+    "sessionId": "gilbert-val-vista~2026-10-27~0600~cc",
+    "spot": "Bike 14"
+   },
+   {
+    "id": "b2",
+    "ref": "CP-T1A1B",
+    "createdAt": 1792845600000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793143800000,
+    "end": 1793147400000,
+    "title": "Desert Flow Yoga",
+    "category": "mind-body",
+    "place": "Studio A",
+    "sessionId": "gilbert-val-vista~2026-10-27~1630~dfy"
+   },
+   {
+    "id": "b3",
+    "ref": "CP-V1A1B",
+    "createdAt": 1793104500000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "held",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793127600000,
+    "end": 1793129400000,
+    "title": "Switchback HIIT",
+    "category": "conditioning",
+    "place": "Studio B",
+    "sessionId": "gilbert-val-vista~2026-10-27~1200~sbh",
+    "holdExpiresAt": 1793106250000
+   },
+   {
+    "id": "b4",
+    "ref": "CP-W1A1B",
+    "createdAt": 1792932000000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793192400000,
+    "end": 1793195100000,
+    "title": "Climb Cycle",
+    "category": "cycle",
+    "place": "Cycle Studio",
+    "sessionId": "gilbert-val-vista~2026-10-28~0600~cc",
+    "spot": "Bike 9"
+   },
+   {
+    "id": "b5",
+    "ref": "CP-X1A1B",
+    "createdAt": 1792932000000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "chris",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793192400000,
+    "end": 1793195100000,
+    "title": "Climb Cycle",
+    "category": "cycle",
+    "place": "Cycle Studio",
+    "sessionId": "gilbert-val-vista~2026-10-28~0600~cc",
+    "spot": "Bike 10"
+   },
+   {
+    "id": "b6",
+    "ref": "CP-Y1A1B",
+    "createdAt": 1792845600000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "waitlisted",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793278800000,
+    "end": 1793282400000,
+    "title": "Rib Rack Strength",
+    "category": "strength",
+    "place": "Studio B",
+    "sessionId": "gilbert-val-vista~2026-10-29~0600~rrs",
+    "position": 2
+   },
+   {
+    "id": "b7",
+    "ref": "CP-Z1A1B",
+    "createdAt": 1792586400000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "attended",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793017800000,
+    "end": 1793021400000,
+    "title": "Rib Rack Strength",
+    "category": "strength",
+    "place": "Studio B",
+    "sessionId": "gilbert-val-vista~2026-10-26~0530~rrs"
+   },
+   {
+    "id": "b8",
+    "ref": "CP-02A1B",
+    "createdAt": 1792413600000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "late_cancelled",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1792859400000,
+    "end": 1792863000000,
+    "title": "Desert Flow Yoga",
+    "category": "mind-body",
+    "place": "Studio A",
+    "sessionId": "gilbert-val-vista~2026-10-24~0930~dfy",
+    "cancelledAt": 1792854600000
+   },
+   {
+    "id": "b9",
+    "ref": "CP-12A1B",
+    "createdAt": 1792327200000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "attended",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1792674000000,
+    "end": 1792676700000,
+    "title": "Climb Cycle",
+    "category": "cycle",
+    "place": "Cycle Studio",
+    "sessionId": "gilbert-val-vista~2026-10-22~0600~cc"
+   },
+   {
+    "id": "b10",
+    "ref": "CP-QRN48",
+    "createdAt": 1792240800000,
+    "ownerId": "maya",
+    "kind": "class",
+    "memberId": "maya",
+    "status": "attended",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1792522800000,
+    "end": 1792524600000,
+    "title": "Switchback HIIT",
+    "category": "conditioning",
+    "place": "Studio B",
+    "sessionId": "gilbert-val-vista~2026-10-20~1200~sbh"
+   },
+   {
+    "id": "b11",
+    "ref": "CP-KC4TD",
+    "createdAt": 1793018400000,
+    "ownerId": "maya",
+    "kind": "kids",
+    "memberId": "theo",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793142000000,
+    "end": 1793149200000,
+    "title": "Kids club",
+    "category": "youth",
+    "place": "Gilbert – Val Vista"
+   },
+   {
+    "id": "b12",
+    "ref": "CP-KC8SA",
+    "createdAt": 1793018400000,
+    "ownerId": "maya",
+    "kind": "kids",
+    "memberId": "theo",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793458800000,
+    "end": 1793466000000,
+    "title": "Kids club",
+    "category": "youth",
+    "place": "Gilbert – Val Vista"
+   },
+   {
+    "id": "b13",
+    "ref": "CP-KC4TD",
+    "createdAt": 1793018400000,
+    "ownerId": "maya",
+    "kind": "kids",
+    "memberId": "ivy",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793142000000,
+    "end": 1793149200000,
+    "title": "Kids club",
+    "category": "youth",
+    "place": "Gilbert – Val Vista"
+   },
+   {
+    "id": "b14",
+    "ref": "CP-KC8SA",
+    "createdAt": 1793018400000,
+    "ownerId": "maya",
+    "kind": "kids",
+    "memberId": "ivy",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793458800000,
+    "end": 1793466000000,
+    "title": "Kids club",
+    "category": "youth",
+    "place": "Gilbert – Val Vista"
+   },
+   {
+    "id": "b15",
+    "ref": "CP-LN3Q8",
+    "createdAt": 1793018400000,
+    "ownerId": "maya",
+    "kind": "lane",
+    "memberId": "maya",
+    "status": "booked",
+    "clubSlug": "mesa-dobson",
+    "start": 1793467800000,
+    "end": 1793470500000,
+    "title": "Lane 3",
+    "category": "aqua",
+    "place": "Mesa – Dobson · 25-yard lap pool",
+    "resource": "Lane 3"
+   },
+   {
+    "id": "b16",
+    "ref": "CP-PT5H2",
+    "createdAt": 1793018400000,
+    "ownerId": "maya",
+    "kind": "pt",
+    "memberId": "maya",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793898900000,
+    "end": 1793901600000,
+    "title": "Training with Marcus Hale",
+    "category": "aqua",
+    "place": "Gilbert – Val Vista",
+    "coachSlug": "marcus-hale",
+    "payment": "8-pack"
+   },
+   {
+    "id": "b17",
+    "ref": "CP-YRN48",
+    "createdAt": 1793018400000,
+    "ownerId": "jordan",
+    "kind": "class",
+    "memberId": "jordan",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793230200000,
+    "end": 1793233800000,
+    "title": "Teen Strength",
+    "category": "youth",
+    "place": "Studio B",
+    "sessionId": "gilbert-val-vista~2026-10-28~1630~ts"
+   },
+   {
+    "id": "b18",
+    "ref": "CP-ZRN48",
+    "createdAt": 1793018400000,
+    "ownerId": "daniel",
+    "kind": "class",
+    "memberId": "daniel",
+    "status": "booked",
+    "clubSlug": "mesa-dobson",
+    "start": 1793203200000,
+    "end": 1793205900000,
+    "title": "Aqua Fit",
+    "category": "aqua",
+    "place": "Pool",
+    "sessionId": "mesa-dobson~2026-10-28~0900~af"
+   },
+   {
+    "id": "b19",
+    "ref": "CP-0SN48",
+    "createdAt": 1793018400000,
+    "ownerId": "daniel",
+    "kind": "class",
+    "memberId": "daniel",
+    "status": "booked",
+    "clubSlug": "mesa-dobson",
+    "start": 1793296800000,
+    "end": 1793298600000,
+    "title": "Mobility 30",
+    "category": "recovery",
+    "place": "Studio A",
+    "sessionId": "mesa-dobson~2026-10-29~1100~m30"
+   },
+   {
+    "id": "b20",
+    "ref": "CP-PSN48",
+    "createdAt": 1793018400000,
+    "ownerId": "ron",
+    "kind": "class",
+    "memberId": "ron",
+    "status": "booked",
+    "clubSlug": "mesa-red-mountain",
+    "start": 1793113200000,
+    "end": 1793118600000,
+    "title": "Pickleball Clinic",
+    "category": "court",
+    "place": "Court",
+    "sessionId": "mesa-red-mountain~2026-10-27~0800~pcl"
+   },
+   {
+    "id": "b21",
+    "ref": "CP-QSN48",
+    "createdAt": 1793018400000,
+    "ownerId": "linda",
+    "kind": "class",
+    "memberId": "linda",
+    "status": "booked",
+    "clubSlug": "mesa-red-mountain",
+    "start": 1793203200000,
+    "end": 1793205900000,
+    "title": "Aqua Fit",
+    "category": "aqua",
+    "place": "Pool",
+    "sessionId": "mesa-red-mountain~2026-10-28~0900~af"
+   },
+   {
+    "id": "b22",
+    "ref": "CP-RSN48",
+    "createdAt": 1793018400000,
+    "ownerId": "alicia",
+    "kind": "class",
+    "memberId": "alicia",
+    "status": "booked",
+    "clubSlug": "gilbert-val-vista",
+    "start": 1793205000000,
+    "end": 1793208600000,
+    "title": "Desert Flow Yoga",
+    "category": "mind-body",
+    "place": "Studio A",
+    "sessionId": "gilbert-val-vista~2026-10-28~0930~dfy"
+   }
+  ],
+  "strikes": [
+   {
+    "id": "s1",
+    "memberId": "maya",
+    "at": 1792854600000,
+    "title": "Desert Flow Yoga, Sat Oct 24"
+   }
+  ],
+  "pauses": {},
+  "notices": [
+   {
+    "filter": "bookings",
+    "id": "n1",
+    "memberId": "maya",
+    "type": "hold",
+    "title": "Spot held: Switchback HIIT, today 12:00 p.m.",
+    "body": "A spot opened. It's yours for 30 minutes. Confirm by 6:05 a.m.",
+    "at": 1793104500000,
+    "needsAction": true,
+    "actionLabel": "Confirm spot",
+    "bookingId": "b3"
+   },
+   {
+    "filter": "bookings",
+    "id": "n2",
+    "memberId": "maya",
+    "type": "booked",
+    "title": "Booked: Climb Cycle, Tue 6:00 a.m.",
+    "body": "Cycle Studio · Gilbert – Val Vista · Bike 14",
+    "at": 1793018400000
+   },
+   {
+    "filter": "billing",
+    "id": "n3",
+    "memberId": "maya",
+    "type": "card",
+    "title": "Card expires 11/26",
+    "body": "Visa ending 4821 expires next month. Update it to keep booking.",
+    "at": 1792932000000,
+    "needsAction": true,
+    "actionLabel": "Update card"
+   },
+   {
+    "filter": "bookings",
+    "id": "n5",
+    "memberId": "maya",
+    "type": "late_cancel",
+    "title": "Late cancel on Sat, Oct 24",
+    "body": "That's 1 of 3. It clears Nov 23. At 3, booking pauses for 3 days.",
+    "at": 1792854900000
+   },
+   {
+    "filter": "bookings",
+    "id": "n6",
+    "memberId": "maya",
+    "type": "feedback",
+    "title": "How was Rib Rack Strength?",
+    "body": "Private note for the club. No stars, no public rating.",
+    "at": 1793025600000,
+    "needsAction": true,
+    "actionLabel": "Give feedback",
+    "bookingId": "b7"
+   },
+   {
+    "filter": "bookings",
+    "id": "n7",
+    "memberId": "alicia",
+    "type": "teen_request",
+    "title": "Jordan asked to join Teen Strength",
+    "body": "Wed, Oct 28 at 4:30 p.m. Approve?",
+    "at": 1793102400000,
+    "needsAction": true,
+    "actionLabel": "Approve",
+    "requestId": "r1"
+   },
+   {
+    "filter": "bookings",
+    "id": "n8",
+    "memberId": "jordan",
+    "type": "booked",
+    "title": "Booked: Teen Strength, Wed 4:30 p.m.",
+    "body": "Studio B · Gilbert – Val Vista",
+    "at": 1792932000000
+   },
+   {
+    "filter": "bookings",
+    "id": "n9",
+    "memberId": "ron",
+    "type": "court_invite",
+    "title": "Linda invited you to pickleball",
+    "body": "Sat 8:00 a.m., Mesa – Red Mountain, Court 3.",
+    "at": 1793094000000
+   },
+   {
+    "filter": "news",
+    "id": "n10",
+    "memberId": "daniel",
+    "type": "coach",
+    "title": "Welcome to Cactus Peak",
+    "body": "Your Trailhead membership is active. Warm-water pool hours are in your club page.",
+    "at": 1792932000000
+   }
+  ],
+  "threads": [
+   {
+    "id": "t1",
+    "memberId": "maya",
+    "with": "Coach Marcus Hale",
+    "subject": "See you Thursday, Nov 5",
+    "isMessage": true,
+    "messages": [
+     {
+      "from": "them",
+      "text": "See you Thursday, Nov 5 at 10:15. Bring goggles and a swim cap if you have one.",
+      "at": 1792942800000
+     }
+    ]
+   }
+  ],
+  "requests": [
+   {
+    "id": "r1",
+    "teenId": "jordan",
+    "parentId": "alicia",
+    "title": "Teen Strength, Wed 4:30 p.m.",
+    "note": "Coach Hannah said I can try the heavier group.",
+    "at": 1793102400000,
+    "status": "pending",
+    "expiresAt": 1793188800000
+   }
+  ],
+  "guestPasses": [
+   {
+    "id": "g1",
+    "householdId": "h1",
+    "guestName": "Pat Lowe",
+    "contact": "pat@example.com",
+    "clubSlug": "gilbert-val-vista",
+    "visitDate": 1793430000000,
+    "validUntil": 1794294000000,
+    "status": "sent",
+    "bought": true,
+    "sentAt": 1792586400000
+   },
+   {
+    "id": "g2",
+    "householdId": "h1",
+    "guestName": "Dana K.",
+    "contact": "dana@example.com",
+    "clubSlug": "mesa-dobson",
+    "visitDate": 1791702000000,
+    "validUntil": 1792911600000,
+    "status": "used",
+    "bought": false,
+    "usedOn": 1791735120000,
+    "sentAt": 1790838000000
+   }
+  ],
+  "visits": [
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1790859600000,
+    "category": "strength"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1791205200000,
+    "category": "strength"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1791464400000,
+    "category": "strength"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1791810000000,
+    "category": "strength"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1792414800000,
+    "category": "strength"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1793017800000,
+    "category": "strength"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1790946000000,
+    "category": "cycle"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1791291600000,
+    "category": "cycle"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1791896400000,
+    "category": "cycle"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1792069200000,
+    "category": "cycle"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1792674000000,
+    "category": "cycle"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1791563400000,
+    "category": "mind-body"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1793064600000,
+    "category": "mind-body"
+   },
+   {
+    "memberId": "maya",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1792522800000,
+    "category": "conditioning"
+   },
+   {
+    "memberId": "jordan",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1792625400000,
+    "category": "youth"
+   },
+   {
+    "memberId": "jordan",
+    "clubSlug": "gilbert-val-vista",
+    "at": 1792798200000,
+    "category": "youth"
+   },
+   {
+    "memberId": "ron",
+    "clubSlug": "mesa-red-mountain",
+    "at": 1793026800000,
+    "category": "court"
+   },
+   {
+    "memberId": "ron",
+    "clubSlug": "mesa-red-mountain",
+    "at": 1792681200000,
+    "category": "court"
+   }
+  ],
+  "prefs": {
+   "maya": {
+    "viewingClub": "gilbert-val-vista",
+    "interests": [
+     "strength",
+     "cycle",
+     "mind-body",
+     "youth"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_gilberx91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "Chris Brandt, (480) 555-0171",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "chris": {
+    "viewingClub": "gilbert-val-vista",
+    "interests": [
+     "strength",
+     "cycle"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_gilberx91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "theo": {
+    "viewingClub": "gilbert-val-vista",
+    "interests": [
+     "strength",
+     "cycle"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_gilberx91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "ivy": {
+    "viewingClub": "gilbert-val-vista",
+    "interests": [
+     "strength",
+     "cycle"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_gilberx91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "alicia": {
+    "viewingClub": "gilbert-val-vista",
+    "interests": [
+     "strength",
+     "cycle"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_gilberx91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "jordan": {
+    "viewingClub": "gilbert-val-vista",
+    "interests": [
+     "youth",
+     "strength"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 2,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_gilberx91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "daniel": {
+    "viewingClub": "mesa-dobson",
+    "interests": [
+     "recovery",
+     "aqua",
+     "mind-body"
+    ],
+    "firstTimersFirst": true,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 3,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_mesadox91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "ron": {
+    "viewingClub": "mesa-red-mountain",
+    "interests": [
+     "court",
+     "aqua"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_mesarex91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   },
+   "linda": {
+    "viewingClub": "mesa-red-mountain",
+    "interests": [
+     "court",
+     "aqua"
+    ],
+    "firstTimersFirst": false,
+    "goal": "stay-consistent",
+    "weeklyTarget": 3,
+    "onboardingStep": 6,
+    "notif": {
+     "reminders": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "waitlist": {
+      "push": true,
+      "email": true,
+      "text": true
+     },
+     "changes": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "coach": {
+      "push": true,
+      "email": false,
+      "text": false
+     },
+     "news": {
+      "push": false,
+      "email": true,
+      "text": false
+     },
+     "billing": {
+      "push": true,
+      "email": true,
+      "text": false
+     },
+     "marketing": {
+      "push": false,
+      "email": false,
+      "text": false
+     }
+    },
+    "reminderMin": 60,
+    "quietHours": true,
+    "calendarToken": "tok_mesarex91kq",
+    "calIncludeHousehold": true,
+    "calIncludeKids": true,
+    "theme": "system",
+    "motion": "system",
+    "textSize": "default",
+    "passkeys": [],
+    "phone": "(480) 555-0188",
+    "preferredName": "",
+    "emergency": "",
+    "marketing": false,
+    "remindWindows": []
+   }
+  },
+  "stats": {
+   "maya": {
+    "streakWeeks": 9,
+    "lifetime": 44,
+    "longest": 12
+   },
+   "chris": {
+    "streakWeeks": 3,
+    "lifetime": 61,
+    "longest": 8
+   },
+   "jordan": {
+    "streakWeeks": 4,
+    "lifetime": 28,
+    "longest": 6
+   },
+   "alicia": {
+    "streakWeeks": 2,
+    "lifetime": 30,
+    "longest": 5
+   },
+   "daniel": {
+    "streakWeeks": 1,
+    "lifetime": 6,
+    "longest": 1
+   },
+   "ron": {
+    "streakWeeks": 14,
+    "lifetime": 310,
+    "longest": 22
+   },
+   "linda": {
+    "streakWeeks": 14,
+    "lifetime": 280,
+    "longest": 22
+   }
+  },
+  "dismissed": {
+   "promo": 0,
+   "passkeyCard": false,
+   "onboardingBanner": false
+  },
+  "remind": [],
+  "opened": {},
+  "seq": 1000
+ }
+}

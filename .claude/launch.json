@@ -1,0 +1,53 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "marketing-site",
+      "runtimeExecutable": "vp",
+      "runtimeArgs": [
+        "env",
+        "exec",
+        "--node",
+        "lts",
+        "pnpm",
+        "-C",
+        "marketing-site",
+        "dev",
+        "--port",
+        "3110"
+      ],
+      "port": 3110
+    },
+    {
+      "name": "web-app",
+      "runtimeExecutable": "vp",
+      "runtimeArgs": [
+        "env",
+        "exec",
+        "--node",
+        "lts",
+        "pnpm",
+        "-C",
+        "web-app",
+        "dev",
+        "--port",
+        "3200"
+      ],
+      "port": 3200
+    },
+    {
+      "name": "brand-files",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8480",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "/Users/ethanhanderson/Library/CloudStorage/OneDrive-ArizonaStateUniversity/git480/Senior Project - Cactus Peak Athletic/Brand Identity"
+      ],
+      "port": 8480
+    }
+  ]
+}

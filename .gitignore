@@ -1,0 +1,33 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+ios/Config/Secrets.xcconfig
+
+# macOS
+.DS_Store
+
+# node / next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+coverage/
+.vercel
+
+# supabase CLI state
+supabase/.temp/
+
+# xcode
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+
+# large review captures (regenerate locally)
+ios/screenshots/
+
+# logs
+*.log

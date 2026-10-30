@@ -1,0 +1,564 @@
+/*
+ * shadcn token file. Every value here is an alias of the Graphical theme "Cactus Peak Athletic" (D-16).
+ * Nothing in this file is a color, size, or font chosen by hand. The owning values live in GUI.md,
+ * components/graphical/theme.ts, and the variables that components/theme-variables.tsx (first paint) and
+ * GraphicalProvider (runtime) write from that document. Those variables change with the color mode, so the
+ * aliases below need no separate .dark block: --neutral-1 is white in light mode and the dark canvas in dark mode.
+ *
+ * ROLE MAP (shadcn variable -> Graphical token; the iOS theme generator reads this table)
+ *
+ *   --background            neutral-1                canvas
+ *   --foreground            neutral-10               text
+ *   --card                  neutral-2                surface
+ *   --card-foreground       neutral-10
+ *   --popover               neutral-1                dialog, drawer, select popup (Graphical popover parts)
+ *   --popover-foreground    neutral-10
+ *   --primary               color-1                  primaryActionColor
+ *   --primary-foreground    cte-accent-text          automatic contrast foreground on color-1 (white in light, black in dark)
+ *   --secondary             neutral-3                Button secondary fill
+ *   --secondary-foreground  neutral-10
+ *   --muted                 neutral-3                surface-muted
+ *   --muted-foreground      neutral-7                text-muted, description text
+ *   --accent                color-1-transparent      selected and active fill (color-1 at the theme's 20% translucency)
+ *   --accent-foreground     neutral-10
+ *   --destructive           error                    Button danger fill, error text
+ *   --border                neutral-4                hairline edges and dividers
+ *   --input                 neutral-6                Input and Checkbox edge
+ *   --ring                  color-5                  focus ring on every component
+ *
+ *   Roles the app uses that shadcn has no slot for (variable here, @theme inline entry below):
+ *   --input-hover           neutral-8                Input hover edge
+ *   --hover                 neutral-3-transparent    Button outline hover fill
+ *   --secondary-hover       neutral-4                Button secondary and ghost hover fill
+ *   --primary-hover         color-6                  Button primary hover fill
+ *   --destructive-hover     color-7                  Button danger hover fill
+ *   --border-strong         neutral-6                Button secondary and outline edge
+ *   --border-strong-hover   neutral-8                Button secondary and outline hover edge
+ *   --disabled-foreground   neutral-6                disabled label and icon
+ *   --success-subtle        success-transparent      status fill
+ *   --warning-subtle        warning-transparent      status fill
+ *   --danger-subtle         error-transparent        status fill
+ *   success, warning        the theme's own --success and --warning, used directly as text-success, text-warning
+ *
+ *   Type roles (text-display .. text-caption) alias the theme's size, line, and letter-spacing
+ *   steps plus a font role weight. Radii, spacing, and motion alias --radius-*, --space-*, and --motion-*.
+ *   See the @theme inline block.
+ */
+@import "tailwindcss";
+/* Graphical runtime stylesheet, imported once. It sits in the base layer so Tailwind utilities still win over
+   its zero-specificity reset and component defaults. */
+@import "../components/graphical/styles.css" layer(base);
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: var(--neutral-3);
+  --foreground: var(--neutral-10);
+  --card: var(--neutral-1);
+  --card-foreground: var(--neutral-10);
+  --popover: var(--neutral-1);
+  --popover-foreground: var(--neutral-10);
+  --primary: var(--color-1);
+  --primary-foreground: var(--cte-accent-text);
+  --secondary: var(--neutral-3);
+  --secondary-foreground: var(--neutral-10);
+  --muted: var(--neutral-4);
+  --muted-foreground: var(--neutral-8);
+  --accent: var(--color-1-transparent);
+  --accent-foreground: var(--neutral-10);
+  --destructive: var(--error);
+  --border: var(--neutral-5);
+  --input: var(--neutral-6);
+  --ring: var(--color-5);
+
+  --input-hover: var(--neutral-8);
+  --hover: var(--neutral-3-transparent);
+  --secondary-hover: var(--neutral-5);
+  --primary-hover: var(--color-6);
+  --destructive-hover: var(--color-7);
+  --border-strong: var(--neutral-6);
+  --border-strong-hover: var(--neutral-8);
+  --disabled-foreground: var(--neutral-6);
+  --success-subtle: var(--success-transparent);
+  --warning-subtle: var(--warning-transparent);
+  --danger-subtle: var(--error-transparent);
+  --night: var(--color-2);
+  --night-foreground: var(--neutral-3);
+  --night-muted: var(--neutral-5);
+  --link: var(--color-6);
+}
+
+/* Category tokens (spec 01-shared-brand-components section 2.2). Fill = stripe, icon, solid badge. Text = label colour on tint. */
+:root {
+  --cat-strength: #b5532c;
+  --cat-strength-text: #9e4522;
+  --cat-cycle: #2f5a45;
+  --cat-cycle-text: #2f5a45;
+  --cat-conditioning: #8a5300;
+  --cat-conditioning-text: #8a5300;
+  --cat-mind-body: #52684a;
+  --cat-mind-body-text: #52684a;
+  --cat-aqua: #1f6e7a;
+  --cat-aqua-text: #1f6e7a;
+  --cat-court: #7f6019;
+  --cat-court-text: #7f6019;
+  --cat-recovery: #5f4e86;
+  --cat-recovery-text: #5f4e86;
+  --cat-youth: #9c3d6b;
+  --cat-youth-text: #9c3d6b;
+  --tint-strength: 10%;
+}
+.dark {
+  --cat-strength: #e0804f;
+  --cat-strength-text: #e0804f;
+  --cat-cycle: #6fb08f;
+  --cat-cycle-text: #6fb08f;
+  --cat-conditioning: #f2b14c;
+  --cat-conditioning-text: #f2b14c;
+  --cat-mind-body: #a9c29a;
+  --cat-mind-body-text: #a9c29a;
+  --cat-aqua: #6fc3cf;
+  --cat-aqua-text: #6fc3cf;
+  --cat-court: #e0c27a;
+  --cat-court-text: #e0c27a;
+  --cat-recovery: #b6a6e0;
+  --cat-recovery-text: #b6a6e0;
+  --cat-youth: #e59bc0;
+  --cat-youth-text: #e59bc0;
+}
+
+@theme inline {
+  /* Clear Tailwind's defaults so a palette class, a default size, or a default radius cannot appear by accident. */
+  --color-*: initial;
+  --font-*: initial;
+  --font-weight-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --ease-*: initial;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-input-hover: var(--input-hover);
+  --color-hover: var(--hover);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-primary-hover: var(--primary-hover);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-border-strong: var(--border-strong);
+  --color-border-strong-hover: var(--border-strong-hover);
+  --color-disabled-foreground: var(--disabled-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-success-subtle: var(--success-subtle);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-danger-subtle: var(--danger-subtle);
+  --color-surface: var(--neutral-1);
+  --color-night: var(--night);
+  --color-night-foreground: var(--night-foreground);
+  --color-night-muted: var(--night-muted);
+  --color-link: var(--link);
+  --color-focus: var(--ring);
+  --color-border-hover: var(--border-strong);
+  --color-cat-strength: var(--cat-strength);
+  --color-cat-cycle: var(--cat-cycle);
+  --color-cat-conditioning: var(--cat-conditioning);
+  --color-cat-mind-body: var(--cat-mind-body);
+  --color-cat-aqua: var(--cat-aqua);
+  --color-cat-court: var(--cat-court);
+  --color-cat-recovery: var(--cat-recovery);
+  --color-cat-youth: var(--cat-youth);
+
+  /* Font roles: ui and editorial are Inter, brand and data are Archivo (see lib/app-theme.ts). */
+  --font-sans: var(--font-ui);
+  --font-heading: var(--font-brand);
+  --font-display: var(--font-brand);
+  --font-data: var(--font-data);
+  --font-weight-normal: var(--weight-ui-regular);
+  --font-weight-medium: var(--weight-ui-medium);
+  --font-weight-semibold: var(--weight-ui-heavy);
+  /* font-bold is used on prices, totals and stat figures, which are data type. */
+  --font-weight-bold: var(--weight-data-heavy);
+
+  /* Type roles. Each one is a Graphical text step (size, line height, tracking) with a font role weight. */
+  --text-display: var(--size-xxl);
+  --text-display--line-height: var(--line-xxl);
+  --text-display--letter-spacing: var(--letter-spacing-xxl);
+  --text-display--font-weight: var(--weight-brand-heavy);
+  --text-h1: var(--size-xl);
+  --text-h1--line-height: var(--line-xl);
+  --text-h1--letter-spacing: var(--letter-spacing-xl);
+  --text-h1--font-weight: var(--weight-brand-heavy);
+  --text-h2: var(--size-l);
+  --text-h2--line-height: var(--line-l);
+  --text-h2--letter-spacing: var(--letter-spacing-l);
+  --text-h2--font-weight: var(--weight-brand-heavy);
+  /* h3 has its own step below h2 (24 px), so a subordinate heading never matches its parent. */
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.75rem;
+  --text-h3--letter-spacing: var(--letter-spacing-l);
+  --text-h3--font-weight: var(--weight-brand-medium);
+  /* Lead: the one supporting line under a section heading. Between body and h3, so it reads as support, not as a heading. */
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.75rem;
+  --text-lead--font-weight: var(--weight-ui-regular);
+  --text-body: var(--size-m);
+  --text-body--line-height: var(--line-m);
+  --text-body--letter-spacing: var(--letter-spacing-m);
+  --text-body--font-weight: var(--weight-ui-regular);
+  --text-body-strong: var(--size-m);
+  --text-body-strong--line-height: var(--line-m);
+  --text-body-strong--letter-spacing: var(--letter-spacing-m);
+  --text-body-strong--font-weight: var(--weight-ui-heavy);
+  --text-label: var(--size-s);
+  --text-label--line-height: var(--line-s);
+  --text-label--letter-spacing: var(--letter-spacing-s);
+  --text-label--font-weight: var(--weight-ui-heavy);
+  --text-caption: var(--size-s);
+  --text-caption--line-height: var(--line-s);
+  --text-caption--letter-spacing: var(--letter-spacing-s);
+  --text-caption--font-weight: var(--weight-ui-regular);
+
+  /* Radii: Tailwind's t-shirt names point at Graphical radius steps. sm = xs, md = s (buttons, inputs), lg = m (cards), 2xl = xl. */
+  --radius-full: 9999px;
+  --radius-sm: var(--radius-xs);
+  --radius-md: var(--radius-s);
+  --radius-lg: var(--radius-m);
+  --radius-2xl: var(--radius-xl);
+
+  /* Spacing: the numeric scale (p-4, gap-6, size-11) counts in Graphical's smallest step, so p-4 is --space-m. */
+  --spacing: var(--space-xxs);
+
+  /* Small motion is the default for every transition utility. */
+  --default-transition-duration: var(--motion-duration);
+  --default-transition-timing-function: var(--motion-easing);
+}
+
+/* Graphical draws an edge as a zero-blur shadow, never a native border (GUI.md "Rules for UI work").
+   `edge` is that hairline. Set its color with a ring color utility (ring-input, ring-accent) and add an elevation
+   with shadow-(--shadow-s). It composes with both. */
+@utility edge {
+  --tw-ring-shadow: 0 0 0 var(--border-s) var(--tw-ring-color, var(--border));
+  box-shadow:
+    var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000),
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+/* edge-l is the same hairline at the theme's large border width, for an emphasized edge such as a selected or invalid group. */
+@utility edge-l {
+  --tw-ring-shadow: 0 0 0 var(--border-l) var(--tw-ring-color, var(--border));
+  box-shadow:
+    var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000),
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+/* Dividers are one-sided inset shadows (gui/foundations.md). rule-t draws the top edge, rule-b the bottom edge,
+   and rule-rows draws a top edge between sibling rows. */
+@utility rule-t {
+  box-shadow: inset 0 var(--border-s) 0 var(--border);
+}
+@utility rule-b {
+  box-shadow: inset 0 calc(var(--border-s) * -1) 0 var(--border);
+}
+@utility rule-rows {
+  & > :where(:not(:first-child)) {
+    box-shadow: inset 0 var(--border-s) 0 var(--border);
+  }
+}
+
+/* A link in page content is underlined at rest. Quiet data labels share the link's 14 px semibold step, so color alone
+   cannot tell an action from a label. Menus, the drawer and the footer are placement zones and keep plain links. */
+@layer base {
+  main :where(a, button).text-link {
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 4px;
+    text-decoration-color: color-mix(in oklab, currentColor 40%, transparent);
+    transition: text-decoration-color 150ms ease-out;
+  }
+  main :where(a, button).text-link:hover {
+    text-decoration-color: currentColor;
+  }
+  /* A fieldset defaults to its content's width. A sideways scroller inside one (the tour day strip) then never scrolls, and body clips it. */
+  fieldset {
+    min-inline-size: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    /* Keeps a focused or anchored element out from under the sticky header (WCAG 2.4.11). */
+    @apply scroll-pt-20 font-sans;
+  }
+  body {
+    @apply bg-background text-body text-foreground;
+    /* Default wrapping for all interface text. It inherits into portals. */
+    text-wrap: pretty;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading text-balance;
+  }
+  /* Keyboard focus: the theme's focus ring (color-5, 2px) placed just outside the 1px edge. */
+  :focus-visible {
+    outline: var(--border-l) solid var(--ring);
+    outline-offset: 2px;
+  }
+  /* Monsoon Sky is 2.55:1 on Saguaro Night. Dark bands use Sand for the ring (3:1 needed). */
+  footer :focus-visible,
+  .bg-night :focus-visible {
+    outline-color: var(--night-foreground);
+  }
+}
+
+/* Archivo is a variable font with a width axis. Display type uses the expanded cut (brand guide section 5). */
+.font-display-wide {
+  font-family: var(--font-brand);
+  font-variation-settings: "wdth" 112;
+  letter-spacing: -0.02em;
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-data);
+}
+/* A quiet label for data: a column, a legend, a footer group. Sentence case, never above a heading (REDESIGN.md goal 1).
+   In the components layer so a color utility on the same element (a badge's text-primary-foreground) wins. */
+@layer components {
+  .eyebrow {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--muted-foreground);
+  }
+}
+/* Lede: the first paragraph under a page title. 20/28, not in the base scale because body and lede must differ. */
+.lede {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 58ch;
+}
+/* Display sizes. Hero: 3 lines at most. Lead: the one section per page that leads. Quiet: utility sections. */
+.display-hero {
+  font-family: var(--font-brand);
+  font-weight: 800;
+  font-variation-settings: "wdth" 112;
+  font-size: clamp(2.75rem, 7.4vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+.display-lead {
+  font-family: var(--font-brand);
+  font-weight: 800;
+  font-variation-settings: "wdth" 112;
+  font-size: clamp(2.25rem, 4.6vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.display-quiet {
+  font-family: var(--font-brand);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  text-wrap: balance;
+}
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    /* biome-ignore lint/complexity/noImportantStyles: the reduced-motion reset must beat component animation and transition utilities */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: the reduced-motion reset must beat component animation and transition utilities */
+    animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: the reduced-motion reset must beat component animation and transition utilities */
+    transition-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: the reduced-motion reset must beat component animation and transition utilities */
+    scroll-behavior: auto !important;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes cp-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* Header menus (the Base UI navigation-menu pattern). The popup follows the open trigger and animates to the
+   size of the next panel; the panels slide in from the side the pointer came from. */
+.nav-positioner {
+  transition-property: top, left, right, bottom;
+  transition-duration: var(--motion-large-duration, 300ms);
+  transition-timing-function: var(--motion-large-easing, ease);
+}
+.nav-positioner[data-instant] {
+  transition: none;
+}
+.nav-popup {
+  transition-property: opacity, transform, width, height;
+  transition-duration: var(--motion-large-duration, 300ms);
+  transition-timing-function: var(--motion-large-easing, ease);
+}
+.nav-panel {
+  width: max-content;
+  transition:
+    opacity calc(var(--motion-large-duration, 300ms) / 2) ease,
+    translate var(--motion-large-duration, 300ms)
+    var(--motion-large-easing, ease);
+}
+.nav-panel[data-starting-style],
+.nav-panel[data-ending-style] {
+  opacity: 0;
+}
+.nav-panel[data-starting-style][data-activation-direction*="left"] {
+  translate: -30% 0;
+}
+.nav-panel[data-starting-style][data-activation-direction*="right"] {
+  translate: 30% 0;
+}
+.nav-panel[data-ending-style][data-activation-direction*="left"] {
+  translate: 30% 0;
+}
+.nav-panel[data-ending-style][data-activation-direction*="right"] {
+  translate: -30% 0;
+}
+.skeleton {
+  background: var(--muted);
+  animation: cp-pulse 1.2s linear infinite;
+  border-radius: var(--radius-xs);
+}
+
+/* Grid items may shrink below their content width, so a scrolling chip row never widens the page. */
+@layer base {
+  .grid > * {
+    min-width: 0;
+  }
+}
+
+/* Visually hidden text is absolutely positioned. Inside a sideways scroller it can sit beyond the viewport edge and widen the page, so the page clips it. */
+body {
+  overflow-x: clip;
+}
+
+/* Eyebrows on Saguaro Night use the night-muted tone. */
+footer .eyebrow,
+.bg-night .eyebrow {
+  color: var(--night-muted);
+}
+
+/* Drawer placements for components/ui/overlay.tsx and the site menu. The Graphical drawer is a bottom sheet centered
+   and capped at 420 px. The site keeps its own geometry: the sheet runs edge to edge on phones and docks to the right
+   edge from 768 px, and the site menu fills the phone screen and is a 420 px right panel from 1024 px. These are
+   structural rules only; the runtime keeps the surface, padding, radius, shadow and motion timing. In the components
+   layer, after the Graphical base layer, so layout utilities on the same element still win. */
+@layer components {
+  .overlay-sheet {
+    width: 100%;
+    max-width: none;
+    max-height: 88dvh;
+    /* An edge-docked sheet has square corners on the docked edge. */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .overlay-side-viewport,
+  .site-menu-viewport {
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+  .overlay-side,
+  .site-menu {
+    max-width: none;
+    height: 100dvh;
+    max-height: none;
+    border-radius: 0;
+    transform: translateX(var(--drawer-swipe-movement-x, 0px));
+  }
+  .overlay-side {
+    width: min(480px, 100%);
+  }
+  .site-menu {
+    width: 100%;
+  }
+  .overlay-side[data-starting-style],
+  .overlay-side[data-ending-style],
+  .site-menu[data-starting-style],
+  .site-menu[data-ending-style] {
+    transform: translateX(100%);
+  }
+  @media (min-width: 768px) {
+    .overlay-sheet-viewport {
+      justify-content: flex-end;
+      align-items: stretch;
+    }
+    .overlay-sheet {
+      width: min(480px, 100%);
+      height: 100dvh;
+      max-height: none;
+      border-radius: 0;
+      transform: translateX(var(--drawer-swipe-movement-x, 0px));
+    }
+    .overlay-sheet[data-starting-style],
+    .overlay-sheet[data-ending-style] {
+      transform: translateX(100%);
+    }
+  }
+  @media (min-width: 1024px) {
+    .site-menu {
+      width: 420px;
+    }
+  }
+  /* Select menus and tooltips open from inside the overlays (z 90). Their Graphical positioners sit at z 40. */
+  .themed-select-positioner,
+  .ui-positioner {
+    z-index: 95;
+  }
+}
+
+/* Pressed Graphical toggles (segmented controls, day strips, filter chips). Graphical fills a pressed toggle with
+   neutral-3, which is the Sand page itself here, so the selection would disappear. Design review item S8 set the
+   selection to a foreground fill with bold text; this applies it in both modes. The base layer holds the runtime
+   styles, so this components-layer rule wins without !important. */
+@layer components {
+  .ui-part[data-ui-component="toggle"][data-pressed]:not([data-disabled]) {
+    background-color: var(--foreground);
+    background-image: none;
+    color: var(--background);
+    font-weight: var(--weight-ui-heavy);
+  }
+}

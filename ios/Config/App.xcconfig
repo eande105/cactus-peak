@@ -1,0 +1,7 @@
+// Shared build settings. Secrets come from the optional, gitignored Secrets.xcconfig.
+SUPABASE_HOST =
+SUPABASE_PUBLISHABLE_KEY =
+DEMO_PASSWORD =
+#include? "Secrets.xcconfig"
+// The demo password never ships in a Release build.
+DEMO_PASSWORD[config=Release] =

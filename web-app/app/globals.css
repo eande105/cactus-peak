@@ -1,0 +1,579 @@
+/*
+ * shadcn token file. Every value here is an alias of the Graphical theme "Cactus Peak Athletic" (D-16).
+ * Nothing in this file is a color, size, or font chosen by hand. The owning values live in GUI.md,
+ * components/graphical/theme.ts, and the variables that components/theme-variables.tsx (first paint) and
+ * GraphicalProvider (runtime) write from that document. Those variables change with the color mode, so the
+ * aliases below need no separate .dark block: --neutral-1 is white in light mode and the dark canvas in dark mode.
+ *
+ * ROLE MAP (shadcn variable -> Graphical token; the iOS theme generator reads this table)
+ *
+ *   --background            neutral-1                canvas
+ *   --foreground            neutral-10               text
+ *   --card                  neutral-2                surface
+ *   --card-foreground       neutral-10
+ *   --popover               neutral-1                dialog, drawer, select popup (Graphical popover parts)
+ *   --popover-foreground    neutral-10
+ *   --primary               color-1                  primaryActionColor
+ *   --primary-foreground    cte-accent-text          automatic contrast foreground on color-1 (white in light, black in dark)
+ *   --secondary             neutral-3                Button secondary fill
+ *   --secondary-foreground  neutral-10
+ *   --muted                 neutral-3                surface-muted
+ *   --muted-foreground      neutral-7                text-muted, description text
+ *   --accent                color-1-transparent      selected and active fill (color-1 at the theme's 20% translucency)
+ *   --accent-foreground     neutral-10
+ *   --destructive           error                    Button danger fill, error text
+ *   --border                neutral-4                hairline edges and dividers
+ *   --input                 neutral-6                Input and Checkbox edge
+ *   --ring                  color-5                  focus ring on every component
+ *
+ *   Roles the app uses that shadcn has no slot for (variable here, @theme inline entry below):
+ *   --input-hover           neutral-8                Input hover edge
+ *   --hover                 neutral-3-transparent    Button outline hover fill
+ *   --secondary-hover       neutral-4                Button secondary and ghost hover fill
+ *   --primary-hover         color-6                  Button primary hover fill
+ *   --destructive-hover     color-7                  Button danger hover fill
+ *   --border-strong         neutral-6                Button secondary and outline edge
+ *   --border-strong-hover   neutral-8                Button secondary and outline hover edge
+ *   --disabled-foreground   neutral-6                disabled label and icon
+ *   --success-subtle        success-transparent      status fill
+ *   --warning-subtle        warning-transparent      status fill
+ *   --danger-subtle         error-transparent        status fill
+ *   success, warning        the theme's own --success and --warning, used directly as text-success, text-warning
+ *
+ *   Type roles (text-display .. text-caption, text-detail) alias the theme's size, line, and letter-spacing
+ *   steps plus a font role weight. Radii, spacing, and motion alias --radius-*, --space-*, and --motion-*.
+ *   See the @theme inline block.
+ */
+@import "tailwindcss";
+/* Graphical runtime stylesheet, imported once. It sits in the base layer so Tailwind utilities still win over
+   its zero-specificity reset and component defaults. */
+@import "../components/graphical/styles.css" layer(base);
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: var(--neutral-1);
+  --foreground: var(--neutral-10);
+  --card: var(--neutral-2);
+  --card-foreground: var(--neutral-10);
+  --popover: var(--neutral-1);
+  --popover-foreground: var(--neutral-10);
+  --primary: var(--color-1);
+  --primary-foreground: var(--cte-accent-text);
+  --secondary: var(--neutral-3);
+  --secondary-foreground: var(--neutral-10);
+  --muted: var(--neutral-3);
+  --muted-foreground: var(--neutral-7);
+  --accent: var(--color-1-transparent);
+  --accent-foreground: var(--neutral-10);
+  --destructive: var(--error);
+  --border: var(--neutral-4);
+  --input: var(--neutral-6);
+  --ring: var(--color-5);
+
+  --input-hover: var(--neutral-8);
+  --hover: var(--neutral-3-transparent);
+  --secondary-hover: var(--neutral-4);
+  --primary-hover: var(--color-6);
+  --destructive-hover: var(--color-7);
+  --border-strong: var(--neutral-6);
+  --border-strong-hover: var(--neutral-8);
+  --disabled-foreground: var(--neutral-6);
+  --success-subtle: var(--success-transparent);
+  --warning-subtle: var(--warning-transparent);
+  --danger-subtle: var(--error-transparent);
+}
+
+@theme inline {
+  /* Clear Tailwind's defaults so a palette class, a default size, or a default radius cannot appear by accident. */
+  --color-*: initial;
+  --font-*: initial;
+  --font-weight-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --ease-*: initial;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-input-hover: var(--input-hover);
+  --color-hover: var(--hover);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-primary-hover: var(--primary-hover);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-border-strong: var(--border-strong);
+  --color-border-strong-hover: var(--border-strong-hover);
+  --color-disabled-foreground: var(--disabled-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-success-subtle: var(--success-subtle);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-danger-subtle: var(--danger-subtle);
+
+  /* Font roles: ui and editorial are Inter, brand and data are Archivo (see lib/app-theme.ts). */
+  --font-sans: var(--font-ui);
+  --font-heading: var(--font-brand);
+  --font-weight-normal: var(--weight-ui-regular);
+  --font-weight-medium: var(--weight-ui-medium);
+  --font-weight-semibold: var(--weight-ui-heavy);
+
+  /* Type roles. Each one is a Graphical text step (size, line height, tracking) with a font role weight. */
+  --text-display: var(--size-xxl);
+  --text-display--line-height: var(--line-xxl);
+  --text-display--letter-spacing: var(--letter-spacing-xxl);
+  --text-display--font-weight: var(--weight-brand-heavy);
+  --text-h1: var(--size-xl);
+  --text-h1--line-height: var(--line-xl);
+  --text-h1--letter-spacing: var(--letter-spacing-xl);
+  --text-h1--font-weight: var(--weight-brand-heavy);
+  --text-h2: var(--size-l);
+  --text-h2--line-height: var(--line-l);
+  --text-h2--letter-spacing: var(--letter-spacing-l);
+  --text-h2--font-weight: var(--weight-brand-heavy);
+  --text-h3: var(--size-l);
+  --text-h3--line-height: var(--line-l);
+  --text-h3--letter-spacing: var(--letter-spacing-l);
+  --text-h3--font-weight: var(--weight-brand-medium);
+  --text-body: var(--size-m);
+  --text-body--line-height: var(--line-m);
+  --text-body--letter-spacing: var(--letter-spacing-m);
+  --text-body--font-weight: var(--weight-ui-regular);
+  --text-body-strong: var(--size-m);
+  --text-body-strong--line-height: var(--line-m);
+  --text-body-strong--letter-spacing: var(--letter-spacing-m);
+  --text-body-strong--font-weight: var(--weight-ui-heavy);
+  --text-label: var(--size-s);
+  --text-label--line-height: var(--line-s);
+  --text-label--letter-spacing: var(--letter-spacing-s);
+  --text-label--font-weight: var(--weight-ui-heavy);
+  --text-caption: var(--size-s);
+  --text-caption--line-height: var(--line-s);
+  --text-caption--letter-spacing: var(--letter-spacing-s);
+  --text-caption--font-weight: var(--weight-ui-regular);
+  --text-detail: var(--size-xs);
+  --text-detail--line-height: var(--line-xs);
+  --text-detail--letter-spacing: var(--letter-spacing-xs);
+  --text-detail--font-weight: var(--weight-ui-regular);
+
+  /* Radii: Tailwind's t-shirt names point at Graphical radius steps. sm = xs, md = s (buttons, inputs), lg = m (cards), 2xl = xl. */
+  --radius-sm: var(--radius-xs);
+  --radius-md: var(--radius-s);
+  --radius-lg: var(--radius-m);
+  --radius-2xl: var(--radius-xl);
+
+  /* Spacing: the numeric scale (p-4, gap-6, size-11) counts in Graphical's smallest step, so p-4 is --space-m. */
+  --spacing: var(--space-xxs);
+
+  /* Small motion is the default for every transition utility. */
+  --default-transition-duration: var(--motion-duration);
+  --default-transition-timing-function: var(--motion-easing);
+}
+
+/* Graphical draws an edge as a zero-blur shadow, never a native border (GUI.md "Rules for UI work").
+   `edge` is that hairline. Set its color with a ring color utility (ring-input, ring-accent) and add an elevation
+   with shadow-(--shadow-s). It composes with both. */
+@utility edge {
+  --tw-ring-shadow: 0 0 0 var(--border-s) var(--tw-ring-color, var(--border));
+  box-shadow:
+    var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000),
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+/* edge-l is the same hairline at the theme's large border width, for an emphasized edge such as a selected or invalid group. */
+@utility edge-l {
+  --tw-ring-shadow: 0 0 0 var(--border-l) var(--tw-ring-color, var(--border));
+  box-shadow:
+    var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000),
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+/* Dividers are one-sided inset shadows (gui/foundations.md). rule-t draws the top edge, rule-b the bottom edge,
+   and rule-rows draws a top edge between sibling rows. */
+@utility rule-t {
+  box-shadow: inset 0 var(--border-s) 0 var(--border);
+}
+@utility rule-b {
+  box-shadow: inset 0 calc(var(--border-s) * -1) 0 var(--border);
+}
+@utility rule-rows {
+  & > :where(:not(:first-child)) {
+    box-shadow: inset 0 var(--border-s) 0 var(--border);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    /* Keeps a focused or anchored element out from under the sticky header (WCAG 2.4.11). */
+    @apply scroll-pt-20 font-sans;
+  }
+  body {
+    @apply bg-background text-body text-foreground;
+    /* Default wrapping for all interface text. It inherits into portals. */
+    text-wrap: pretty;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading text-balance;
+  }
+  /* Keyboard focus: the theme's focus ring (color-5, 2px) placed just outside the 1px edge. */
+  :focus-visible {
+    outline: var(--border-l) solid var(--ring);
+    outline-offset: var(--border-s);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------
+ * Member app layer. Page is Sand and surfaces are white (light), canvas and raised green-black (dark).
+ * The Graphical neutrals swap meaning between modes, so the role map is restated for dark.
+ * Category colours are the final tokens from specs 01-shared-brand-components.md section 2.2.
+ * ---------------------------------------------------------------------------------------------- */
+:root {
+  --background: var(--neutral-3);
+  --card: var(--neutral-1);
+  --popover: var(--neutral-1);
+  --muted: var(--neutral-4);
+
+  --night: #1c3328;
+  --on-night: #f6f1e8;
+  --dawn: #e0804f;
+  --photo-band: color-mix(in srgb, var(--night) 80%, transparent);
+
+  --cat-strength: #b5532c;
+  --cat-strength-text: #9e4522;
+  --cat-cycle: #2f5a45;
+  --cat-cycle-text: #2f5a45;
+  --cat-conditioning: #8a5300;
+  --cat-conditioning-text: #8a5300;
+  --cat-mind-body: #52684a;
+  --cat-mind-body-text: #52684a;
+  --cat-aqua: #1f6e7a;
+  --cat-aqua-text: #1f6e7a;
+  --cat-court: #7f6019;
+  --cat-court-text: #7f6019;
+  --cat-recovery: #5f4e86;
+  --cat-recovery-text: #5f4e86;
+  --cat-youth: #9c3d6b;
+  --cat-youth-text: #9c3d6b;
+  --cat-tint-strength: 10%;
+  --on-cat: #ffffff;
+}
+:root.dark {
+  --background: var(--neutral-1);
+  --card: var(--neutral-2);
+  --popover: var(--neutral-2);
+  --muted: var(--neutral-3);
+
+  --cat-strength: #e0804f;
+  --cat-strength-text: #e0804f;
+  --cat-cycle: #6fb08f;
+  --cat-cycle-text: #6fb08f;
+  --cat-conditioning: #f2b14c;
+  --cat-conditioning-text: #f2b14c;
+  --cat-mind-body: #a9c29a;
+  --cat-mind-body-text: #a9c29a;
+  --cat-aqua: #6fc3cf;
+  --cat-aqua-text: #6fc3cf;
+  --cat-court: #e0c27a;
+  --cat-court-text: #e0c27a;
+  --cat-recovery: #b6a6e0;
+  --cat-recovery-text: #b6a6e0;
+  --cat-youth: #e59bc0;
+  --cat-youth-text: #e59bc0;
+  --cat-tint-strength: 14%;
+  --on-cat: #121a16;
+  --photo-band: color-mix(in srgb, var(--night) 80%, transparent);
+}
+
+@theme inline {
+  --color-night: var(--night);
+  --color-on-night: var(--on-night);
+  --color-dawn: var(--dawn);
+  --color-photo-band: var(--photo-band);
+  --color-on-cat: var(--on-cat);
+  --color-cat: var(--c);
+  --color-cat-text: var(--ct);
+  --color-cat-tint: var(--ctint);
+  --font-data: var(--font-data);
+  --text-tab: var(--size-xs);
+  --text-tab--line-height: var(--line-xs);
+  --text-tab--font-weight: 500;
+}
+
+.cat-strength {
+  --c: var(--cat-strength);
+  --ct: var(--cat-strength-text);
+}
+.cat-cycle {
+  --c: var(--cat-cycle);
+  --ct: var(--cat-cycle-text);
+}
+.cat-conditioning {
+  --c: var(--cat-conditioning);
+  --ct: var(--cat-conditioning-text);
+}
+.cat-mind-body {
+  --c: var(--cat-mind-body);
+  --ct: var(--cat-mind-body-text);
+}
+.cat-aqua {
+  --c: var(--cat-aqua);
+  --ct: var(--cat-aqua-text);
+}
+.cat-court {
+  --c: var(--cat-court);
+  --ct: var(--cat-court-text);
+}
+.cat-recovery {
+  --c: var(--cat-recovery);
+  --ct: var(--cat-recovery-text);
+}
+.cat-youth {
+  --c: var(--cat-youth);
+  --ct: var(--cat-youth-text);
+}
+[class*="cat-"] {
+  --ctint: color-mix(
+    in srgb,
+    var(--c) var(--cat-tint-strength, 10%),
+    var(--card)
+  );
+}
+
+/* Eyebrow: Archivo 600 uppercase, wide tracking (brand guide section 5). */
+@utility eyebrow {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: var(--size-xs);
+  line-height: var(--line-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-stretch: 112%;
+}
+@utility display-stretch {
+  font-stretch: 112%;
+}
+@utility num {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+@utility num-l {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: var(--size-xl);
+  line-height: var(--line-xl);
+  letter-spacing: -0.02em;
+}
+@utility hatch {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 5px,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 5px 6px
+  );
+}
+
+/* Side drawer: the Graphical drawer is a bottom sheet. From 768px it docks to the right edge. */
+.side-drawer-viewport {
+  align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .side-drawer-viewport {
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+  .side-drawer {
+    width: min(480px, 100%);
+    height: 100%;
+    max-height: none;
+    border-radius: 0;
+    transform: translateX(var(--drawer-swipe-movement-x, 0px));
+  }
+  .side-drawer[data-starting-style],
+  .side-drawer[data-ending-style] {
+    transform: translateX(100%);
+  }
+}
+.nav-drawer-viewport {
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.nav-drawer {
+  width: min(320px, calc(100% - 48px));
+  height: 100%;
+  max-height: none;
+  border-radius: 0;
+  padding: 0;
+  transform: translateX(var(--drawer-swipe-movement-x, 0px));
+}
+.nav-drawer[data-starting-style],
+.nav-drawer[data-ending-style] {
+  transform: translateX(-100%);
+}
+.wide-modal {
+  /* biome-ignore lint/complexity/noImportantStyles: beats the dialog popup's own width, which loads later */
+  width: min(560px, calc(100vw - var(--space-xl))) !important;
+}
+
+html {
+  scroll-padding-bottom: 96px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    /* biome-ignore lint/complexity/noImportantStyles: standard reduced-motion reset, must beat every component rule */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: standard reduced-motion reset, must beat every component rule */
+    animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: standard reduced-motion reset, must beat every component rule */
+    transition-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: standard reduced-motion reset, must beat every component rule */
+    scroll-behavior: auto !important;
+  }
+}
+:root[data-motion="reduce"] *,
+:root[data-motion="reduce"] *::before,
+:root[data-motion="reduce"] *::after {
+  /* biome-ignore lint/complexity/noImportantStyles: user motion preference must beat every component rule */
+  animation-duration: 0.01ms !important;
+  /* biome-ignore lint/complexity/noImportantStyles: user motion preference must beat every component rule */
+  transition-duration: 0.01ms !important;
+}
+:root[data-text="large"] {
+  font-size: 18px;
+}
+@keyframes cp-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+.live-dot {
+  animation: cp-pulse 2s ease-in-out infinite;
+}
+@keyframes cp-flash {
+  from {
+    background-color: var(--accent);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+.row-flash {
+  animation: cp-flash 600ms ease-out 1;
+}
+
+/* Toasts: bottom-right on desktop, bottom-centre above the tab bar below 1024px. */
+.toast-viewport {
+  right: var(--space-l);
+  bottom: var(--space-l);
+}
+@media (max-width: 1023px) {
+  .toast-viewport {
+    left: 50%;
+    right: auto;
+    translate: -50% 0;
+    bottom: 88px;
+  }
+}
+
+/* Screen-reader-only text is absolutely positioned. Inside a scroller it must stay clipped by that scroller,
+   or it widens the whole page. Scrollers become the containing block. */
+@layer base {
+  :where(.overflow-x-auto, .overflow-y-auto, .overflow-auto):not(
+    .sticky,
+    .fixed,
+    .absolute,
+    .relative
+  ) {
+    position: relative;
+  }
+}
+
+/* Count badges: white on Chili in light, pale on deep Chili in dark (both above 4.5:1). */
+:root {
+  --badge-danger: #b42318;
+  --badge-danger-fg: #ffffff;
+}
+:root.dark {
+  --badge-danger: #7a1f17;
+  --badge-danger-fg: #ffe9e5;
+}
+@theme inline {
+  --color-badge-danger: var(--badge-danger);
+  --color-badge-danger-fg: var(--badge-danger-fg);
+}
+
+/* Collapse: grid row height and opacity on the large motion token. */
+.collapse-in,
+.collapse-out {
+  display: grid;
+  animation-duration: var(--motion-large-duration, 300ms);
+  animation-timing-function: var(--motion-large-easing, ease);
+  animation-fill-mode: both;
+}
+.collapse-in {
+  animation-name: collapse-in;
+}
+.collapse-out {
+  animation-name: collapse-out;
+}
+@keyframes collapse-in {
+  from {
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+  to {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+}
+@keyframes collapse-out {
+  from {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  to {
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+}
+
+/* Pressed Graphical toggles (segmented controls, day strips, filter chips). Graphical fills a pressed toggle with
+   neutral-3, which is the Sand page itself here, so the selection would disappear. Design review item S8 set the
+   selection to a foreground fill with bold text; this applies it in both modes. The base layer holds the runtime
+   styles, so this components-layer rule wins without !important. */
+@layer components {
+  .ui-part[data-ui-component="toggle"][data-pressed]:not([data-disabled]) {
+    background-color: var(--foreground);
+    background-image: none;
+    color: var(--background);
+    font-weight: var(--weight-ui-heavy);
+  }
+}

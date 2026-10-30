@@ -1,0 +1,1812 @@
+{
+ "categories": [
+  {
+   "id": "strength",
+   "name": "Strength",
+   "tagline": "Build the base.",
+   "count": 4,
+   "intensity": [
+    2,
+    5
+   ],
+   "examples": "Rib Rack Strength, Barbell Basics, Kettlebell Flow",
+   "lede": "Four classes, a coach at every rack. Learn the lift, then add the load.",
+   "heroCaption": "Rib Rack Strength — coach spotting a back squat, 6:30 a.m."
+  },
+  {
+   "id": "cycle",
+   "name": "Cycle",
+   "tagline": "Ride the hills.",
+   "count": 3,
+   "intensity": [
+    2,
+    5
+   ],
+   "examples": "Climb Cycle, Rhythm Ride, Endurance 60",
+   "lede": "Three rides, five cycle studios. Pick a hill, a beat or a long road.",
+   "heroCaption": "Cycle studio — riders, morning light through the windows"
+  },
+  {
+   "id": "conditioning",
+   "name": "Conditioning",
+   "tagline": "Work hard, then stop.",
+   "count": 3,
+   "intensity": [
+    3,
+    5
+   ],
+   "examples": "Switchback HIIT, Canal Run Club, Bootcamp",
+   "lede": "Short, hard blocks with real rest. You leave tired and done.",
+   "heroCaption": "Switchback HIIT — turf lane, first interval"
+  },
+  {
+   "id": "mind-body",
+   "name": "Mind & Body",
+   "tagline": "Move slow, breathe well.",
+   "count": 4,
+   "intensity": [
+    1,
+    3
+   ],
+   "examples": "Desert Flow Yoga, Mat Pilates, Mobility 30",
+   "lede": "Four slow classes for joints, breath and a steady head. Most are good for a first visit.",
+   "heroCaption": "Desert Flow Yoga — studio B, low sun on the floor"
+  },
+  {
+   "id": "aqua",
+   "name": "Aqua",
+   "tagline": "Water does half the work.",
+   "count": 4,
+   "intensity": [
+    1,
+    4
+   ],
+   "examples": "Lap Swim, Aqua Fit, Swim School",
+   "lede": "Lanes, classes and swim school at the three clubs with pools.",
+   "heroCaption": "Lap lanes at Red Mountain under the shade sails"
+  },
+  {
+   "id": "court",
+   "name": "Court",
+   "tagline": "Play more than you plan.",
+   "count": 4,
+   "intensity": [
+    2,
+    4
+   ],
+   "examples": "Pickleball Open Play, Clinic, Tennis Drills",
+   "lede": "Pickleball, tennis and hoops at Dobson, Red Mountain and Val Vista.",
+   "heroCaption": "Pickleball doubles, Red Mountain, 7 a.m."
+  },
+  {
+   "id": "recovery",
+   "name": "Recovery",
+   "tagline": "Rest is a skill.",
+   "count": 3,
+   "intensity": [
+    1,
+    1
+   ],
+   "examples": "Stretch & Release, Sauna + Plunge, Compression",
+   "lede": "Stretch, heat, cold and compression. Rest, on the schedule.",
+   "heroCaption": "Recovery lounge — sauna door open, soft light"
+  },
+  {
+   "id": "youth",
+   "name": "Youth",
+   "tagline": "Ages 6 months to 17.",
+   "count": 3,
+   "intensity": [
+    1,
+    4
+   ],
+   "examples": "Kids Club, Teen Strength, Junior Pickleball",
+   "lede": "Kids club, teen strength and junior pickleball. Coached, and a parent is always in the building.",
+   "heroCaption": "Teen Strength — coach correcting a hip hinge"
+  }
+ ],
+ "classTypes": [
+  {
+   "slug": "rib-rack-strength",
+   "name": "Rib Rack Strength",
+   "category": "strength",
+   "blurb": "Squat, press and pull in small groups, with a coach at the rack.",
+   "description": "Squat, press and pull in small groups, with a coach at the rack.",
+   "duration": 60,
+   "intensity": [
+    3,
+    5
+   ],
+   "firstTimer": false,
+   "group": "Up to 12",
+   "clubs": "all",
+   "pick": "Pick this if you like a plan and a barbell.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Rib Rack Strength — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "barbell-basics",
+   "name": "Barbell Basics",
+   "category": "strength",
+   "blurb": "Learn the squat, hinge and press with an empty bar. Form first.",
+   "description": "Learn the squat, hinge and press with an empty bar. Form first.",
+   "duration": 45,
+   "intensity": [
+    2,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Up to 10",
+   "clubs": "all",
+   "pick": "Pick this if you have never lifted.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "teen": true,
+   "caption": "Barbell Basics — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "kettlebell-flow",
+   "name": "Kettlebell Flow",
+   "category": "strength",
+   "blurb": "Swings, goblet squats and carries in a steady circuit.",
+   "description": "Swings, goblet squats and carries in a steady circuit.",
+   "duration": 45,
+   "intensity": [
+    3,
+    4
+   ],
+   "firstTimer": true,
+   "group": "Up to 14",
+   "clubs": "all",
+   "pick": "Pick this if you want strength without a rack.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Kettlebell Flow — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "olympic-lifting-club",
+   "name": "Olympic Lifting Club",
+   "category": "strength",
+   "blurb": "Snatch and clean-and-jerk technique on the platforms.",
+   "description": "Snatch and clean-and-jerk technique on the platforms.",
+   "duration": 75,
+   "intensity": [
+    4,
+    5
+   ],
+   "firstTimer": false,
+   "group": "Up to 8",
+   "clubs": [
+    "gilbert-heritage",
+    "mesa-dobson"
+   ],
+   "pick": "Pick this if you already lift and want technique.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Olympic Lifting Club — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "climb-cycle",
+   "name": "Climb Cycle",
+   "category": "cycle",
+   "blurb": "Rolling hills on a bike. Heavy resistance, seated and standing climbs, and a long final push.",
+   "description": "Rolling hills on a bike. Heavy resistance, seated and standing climbs, and a long final push.",
+   "duration": 45,
+   "intensity": [
+    4,
+    4
+   ],
+   "firstTimer": true,
+   "firstTimerNote": "Yes, with a bike set-up",
+   "group": "Up to 24 riders",
+   "clubs": "all",
+   "pick": "Pick this if you like to push.",
+   "gear": "Bike, water bottle, towel. Shoes optional.",
+   "caption": "Climb Cycle — riders from behind, a coach's cue visible, morning light across the studio"
+  },
+  {
+   "slug": "rhythm-ride",
+   "name": "Rhythm Ride",
+   "category": "cycle",
+   "blurb": "Pedal to the beat in a dark studio. Light climbs, big choruses.",
+   "description": "Pedal to the beat in a dark studio. Light climbs, big choruses.",
+   "duration": 45,
+   "intensity": [
+    3,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Up to 24 riders",
+   "clubs": "all",
+   "pick": "Pick this if you like music.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Rhythm Ride — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "endurance-60",
+   "name": "Endurance 60",
+   "category": "cycle",
+   "blurb": "One steady hour in the saddle. Settle in and hold a pace.",
+   "description": "One steady hour in the saddle. Settle in and hold a pace.",
+   "duration": 60,
+   "intensity": [
+    2,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Up to 24 riders",
+   "clubs": "all",
+   "pick": "Pick this if you like to settle in.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Endurance 60 — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "switchback-hiit",
+   "name": "Switchback HIIT",
+   "category": "conditioning",
+   "blurb": "Short, hard intervals with real rest. Sleds, rowers and bodyweight.",
+   "description": "Short, hard intervals with real rest. Sleds, rowers and bodyweight.",
+   "duration": 40,
+   "intensity": [
+    5,
+    5
+   ],
+   "firstTimer": false,
+   "group": "Up to 16",
+   "clubs": "all",
+   "pick": "Pick this if you like a short, hard hour.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Switchback HIIT — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "canal-run-club",
+   "name": "Canal Run Club",
+   "category": "conditioning",
+   "blurb": "A coached group run on the canal path. Three paces, nobody dropped.",
+   "description": "A coached group run on the canal path. Three paces, nobody dropped.",
+   "duration": 50,
+   "intensity": [
+    3,
+    4
+   ],
+   "firstTimer": true,
+   "group": "Open",
+   "clubs": [
+    "mesa-red-mountain",
+    "gilbert-val-vista",
+    "gilbert-heritage"
+   ],
+   "pick": "Pick this if you like to run with people.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Canal Run Club — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "bootcamp",
+   "name": "Bootcamp",
+   "category": "conditioning",
+   "blurb": "Circuits on the turf lane: pushes, pulls, carries, sprints.",
+   "description": "Circuits on the turf lane: pushes, pulls, carries, sprints.",
+   "duration": 45,
+   "intensity": [
+    4,
+    4
+   ],
+   "firstTimer": false,
+   "group": "Up to 20",
+   "clubs": "all",
+   "pick": "Pick this if you like variety.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Bootcamp — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "desert-flow-yoga",
+   "name": "Desert Flow Yoga",
+   "category": "mind-body",
+   "blurb": "A flowing vinyasa class. Strong holds, slow breath, a long rest at the end.",
+   "description": "A flowing vinyasa class. Strong holds, slow breath, a long rest at the end.",
+   "duration": 60,
+   "intensity": [
+    2,
+    2
+   ],
+   "firstTimer": true,
+   "group": "Up to 22",
+   "clubs": "all",
+   "pick": "Pick this if you want to stretch and sweat a little.",
+   "gear": "Mat (we have loaners), water.",
+   "teen": true,
+   "caption": "Desert Flow Yoga — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "mat-pilates",
+   "name": "Mat Pilates",
+   "category": "mind-body",
+   "blurb": "Core and hip work on the mat. Small movements, a lot of control.",
+   "description": "Core and hip work on the mat. Small movements, a lot of control.",
+   "duration": 50,
+   "intensity": [
+    2,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Up to 18",
+   "clubs": "all",
+   "pick": "Pick this if you want a stronger center.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Mat Pilates — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "mobility-30",
+   "name": "Mobility 30",
+   "category": "mind-body",
+   "blurb": "Thirty minutes of joint prep and gentle stretching. Good before a lift or after surgery.",
+   "description": "Thirty minutes of joint prep and gentle stretching. Good before a lift or after surgery.",
+   "duration": 30,
+   "intensity": [
+    1,
+    1
+   ],
+   "firstTimer": true,
+   "group": "Up to 20",
+   "clubs": "all",
+   "pick": "Pick this if you are coming back from an injury.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Mobility 30 — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "breathwork",
+   "name": "Breathwork",
+   "category": "mind-body",
+   "blurb": "Guided breathing and a long rest. Lie down. We do the talking.",
+   "description": "Guided breathing and a long rest. Lie down. We do the talking.",
+   "duration": 30,
+   "intensity": [
+    1,
+    1
+   ],
+   "firstTimer": true,
+   "group": "Up to 20",
+   "clubs": "all",
+   "pick": "Pick this if you want to slow down.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Breathwork — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "lap-swim",
+   "name": "Lap Swim",
+   "category": "aqua",
+   "blurb": "Reserve a lane in a 45-minute slot. Up to two swimmers share a lane.",
+   "description": "Reserve a lane in a 45-minute slot. Up to two swimmers share a lane.",
+   "duration": 45,
+   "intensity": [
+    2,
+    4
+   ],
+   "firstTimer": true,
+   "group": "2 per lane",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you swim on your own.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Lap Swim — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "aqua-fit",
+   "name": "Aqua Fit",
+   "category": "aqua",
+   "blurb": "Low-impact cardio and strength in the water. The water holds you up.",
+   "description": "Low-impact cardio and strength in the water. The water holds you up.",
+   "duration": 45,
+   "intensity": [
+    1,
+    2
+   ],
+   "firstTimer": true,
+   "group": "Up to 25",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if your joints want a break.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Aqua Fit — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "swim-school",
+   "name": "Swim School",
+   "category": "aqua",
+   "blurb": "Five levels from Splash to Lap-ready, taught by Red Cross-certified coaches.",
+   "description": "Five levels from Splash to Lap-ready, taught by Red Cross-certified coaches.",
+   "duration": 30,
+   "intensity": [
+    1,
+    2
+   ],
+   "firstTimer": true,
+   "group": "Up to 6 per coach",
+   "clubs": [
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if your child is learning to swim.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Swim School — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "masters-swim",
+   "name": "Masters Swim",
+   "category": "aqua",
+   "blurb": "Coached laps with a written set. For adults who already swim.",
+   "description": "Coached laps with a written set. For adults who already swim.",
+   "duration": 60,
+   "intensity": [
+    3,
+    4
+   ],
+   "firstTimer": false,
+   "group": "Up to 16",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you want a set to follow.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Masters Swim — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "pickleball-open-play",
+   "name": "Pickleball Open Play",
+   "category": "court",
+   "blurb": "Rotate in and play. Ask a coach for a beginner court.",
+   "description": "Rotate in and play. Ask a coach for a beginner court.",
+   "duration": 90,
+   "intensity": [
+    2,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Open",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you just want to play.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Pickleball Open Play — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "pickleball-clinic",
+   "name": "Pickleball Clinic",
+   "category": "court",
+   "blurb": "Drills for dinks, drops and serves, then games to 11.",
+   "description": "Drills for dinks, drops and serves, then games to 11.",
+   "duration": 60,
+   "intensity": [
+    2,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Up to 12",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you want to get better.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Pickleball Clinic — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "tennis-drills",
+   "name": "Tennis Drills",
+   "category": "court",
+   "blurb": "Feed-and-hit drills with a coach. All levels.",
+   "description": "Feed-and-hit drills with a coach. All levels.",
+   "duration": 60,
+   "intensity": [
+    3,
+    4
+   ],
+   "firstTimer": false,
+   "group": "Up to 8",
+   "clubs": [
+    "mesa-dobson"
+   ],
+   "pick": "Pick this if you play tennis.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Tennis Drills — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "hoops-run",
+   "name": "Hoops Run",
+   "category": "court",
+   "blurb": "Pick-up basketball on two full courts.",
+   "description": "Pick-up basketball on two full courts.",
+   "duration": 90,
+   "intensity": [
+    3,
+    4
+   ],
+   "firstTimer": false,
+   "group": "Open",
+   "clubs": [
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you like to run the floor.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Hoops Run — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "stretch-and-release",
+   "name": "Stretch & Release",
+   "category": "recovery",
+   "blurb": "Guided stretching and foam rolling. Ends with five quiet minutes.",
+   "description": "Guided stretching and foam rolling. Ends with five quiet minutes.",
+   "duration": 30,
+   "intensity": [
+    1,
+    1
+   ],
+   "firstTimer": true,
+   "group": "Up to 20",
+   "clubs": "all",
+   "pick": "Pick this if you are sore.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Stretch & Release — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "sauna-plunge",
+   "name": "Sauna + Plunge",
+   "category": "recovery",
+   "blurb": "A 30-minute slot for heat and cold in the recovery space. Ages 18 and up.",
+   "description": "A 30-minute slot for heat and cold in the recovery space. Ages 18 and up.",
+   "duration": 30,
+   "intensity": [
+    1,
+    1
+   ],
+   "firstTimer": true,
+   "group": "Up to 8",
+   "clubs": [
+    "mesa-dobson",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you have Summit and a sore week.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Sauna + Plunge — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "compression",
+   "name": "Compression",
+   "category": "recovery",
+   "blurb": "Air boots for tired legs. Sit, read, leave lighter.",
+   "description": "Air boots for tired legs. Sit, read, leave lighter.",
+   "duration": 30,
+   "intensity": [
+    1,
+    1
+   ],
+   "firstTimer": true,
+   "group": "Up to 6",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-downtown",
+    "gilbert-val-vista",
+    "gilbert-heritage"
+   ],
+   "pick": "Pick this if you run or lift most days.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Compression — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "kids-club",
+   "name": "Kids Club",
+   "category": "youth",
+   "blurb": "Play, crafts and games for ages 6 months to 12 years, in 2-hour blocks.",
+   "description": "Play, crafts and games for ages 6 months to 12 years, in 2-hour blocks.",
+   "duration": 120,
+   "intensity": [
+    1,
+    2
+   ],
+   "firstTimer": true,
+   "group": "Staffed 1 to 8",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if you want to train while they play.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Kids Club — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "teen-strength",
+   "name": "Teen Strength",
+   "category": "youth",
+   "blurb": "Coached barbell and bodyweight basics for ages 13 to 17. Form first.",
+   "description": "Coached barbell and bodyweight basics for ages 13 to 17. Form first.",
+   "duration": 45,
+   "intensity": [
+    2,
+    4
+   ],
+   "firstTimer": true,
+   "group": "Up to 12",
+   "clubs": [
+    "gilbert-val-vista",
+    "mesa-dobson"
+   ],
+   "pick": "Pick this if your teen wants a place that is not a screen.",
+   "gear": "Water, trainers.",
+   "teen": true,
+   "caption": "Teen Strength — class in progress, faces visible, natural light"
+  },
+  {
+   "slug": "junior-pickleball",
+   "name": "Junior Pickleball",
+   "category": "youth",
+   "blurb": "A clinic for ages 8 to 14. Games, rules and manners.",
+   "description": "A clinic for ages 8 to 14. Games, rules and manners.",
+   "duration": 60,
+   "intensity": [
+    2,
+    3
+   ],
+   "firstTimer": true,
+   "group": "Up to 12",
+   "clubs": [
+    "mesa-dobson",
+    "mesa-red-mountain",
+    "gilbert-val-vista"
+   ],
+   "pick": "Pick this if your child wants to play the family sport.",
+   "gear": "Water bottle, towel, shoes you can move in.",
+   "caption": "Junior Pickleball — class in progress, faces visible, natural light"
+  }
+ ],
+ "firstTimerShelf": [
+  "barbell-basics",
+  "desert-flow-yoga",
+  "mat-pilates",
+  "aqua-fit",
+  "mobility-30",
+  "rhythm-ride"
+ ],
+ "popularNow": [
+  "climb-cycle",
+  "desert-flow-yoga",
+  "rib-rack-strength",
+  "aqua-fit",
+  "pickleball-open-play"
+ ],
+ "clubs": [
+  {
+   "slug": "mesa-dobson",
+   "name": "Mesa – Dobson",
+   "short": "Dobson",
+   "city": "Mesa",
+   "type": "Flagship",
+   "sqFt": 68000,
+   "cross": "Dobson Rd & Southern Ave",
+   "zip": "85202",
+   "phone": "(480) 555-0114",
+   "tel": "+14805550114",
+   "personality": "The big one. Bring the whole family.",
+   "intro": "Our first club and our largest. A lap pool and a warm-water therapy pool, four pickleball courts and two tennis courts, a full recovery suite, and a kids club. Plan on staying a while.",
+   "amenities": [
+    "25-yd lap pool",
+    "Warm-water pool",
+    "4 pickleball courts",
+    "2 tennis courts",
+    "Recovery suite",
+    "Kids club",
+    "3 studios + cycle studio",
+    "Café"
+   ],
+   "signature": [
+    "25-yd lap pool",
+    "Warm-water pool",
+    "Recovery suite"
+   ],
+   "has": {
+    "pool": true,
+    "courts": true,
+    "cycling": true,
+    "kids": true,
+    "recovery": true,
+    "classes": true
+   },
+   "map": {
+    "x": 62,
+    "y": 46
+   },
+   "miles": 11.3,
+   "photo": "Dobson — family at the pool edge, 25-yd lanes behind, early light",
+   "tone": "teal",
+   "opened": 2014,
+   "parking": "Free lot on the north side. Covered bays near the kids club door.",
+   "access": "Step-free entrance on the east side. Lift access to the warm-water pool.",
+   "lanes": 8,
+   "courts": {
+    "pickleball": 4,
+    "tennis": 2
+   },
+   "studios": 3,
+   "busyness": 3,
+   "extras": "Café"
+  },
+  {
+   "slug": "mesa-red-mountain",
+   "name": "Mesa – Red Mountain",
+   "short": "Red Mountain",
+   "city": "Mesa",
+   "type": "Full club",
+   "sqFt": 52000,
+   "cross": "Power Rd & McKellips Rd",
+   "zip": "85207",
+   "phone": "(480) 555-0127",
+   "tel": "+14805550127",
+   "personality": "Sunrise over the Superstitions, every morning.",
+   "intro": "An outdoor 25-m pool under shade sails, six pickleball courts, a turf lane and a cardio deck that faces the Superstition Mountains. The first class of the day starts as the sun clears the ridge.",
+   "amenities": [
+    "Outdoor 25-m pool",
+    "6 pickleball courts",
+    "Turf lane",
+    "Kids club",
+    "2 studios + cycle studio",
+    "Superstition-view cardio deck"
+   ],
+   "signature": [
+    "Outdoor 25-m pool",
+    "6 pickleball courts",
+    "Cardio deck"
+   ],
+   "has": {
+    "pool": true,
+    "courts": true,
+    "cycling": true,
+    "kids": true,
+    "recovery": false,
+    "classes": true
+   },
+   "map": {
+    "x": 80,
+    "y": 30
+   },
+   "miles": 13,
+   "photo": "Red Mountain — outdoor pool under shade sails, 6 a.m., Superstition ridge soft behind",
+   "tone": "copper",
+   "opened": 2017,
+   "parking": "Free lot on the west side. Shade is not guaranteed.",
+   "access": "Step-free entrance on the south side. Accessible changing rooms.",
+   "lanes": 8,
+   "courts": {
+    "pickleball": 6
+   },
+   "studios": 2,
+   "busyness": 2,
+   "extras": "Superstition-view cardio deck, turf lane"
+  },
+  {
+   "slug": "mesa-downtown",
+   "name": "Mesa – Downtown",
+   "short": "Downtown",
+   "city": "Mesa",
+   "type": "Studio club",
+   "sqFt": 18000,
+   "cross": "Main St & Center St",
+   "zip": "85201",
+   "phone": "(480) 555-0139",
+   "tel": "+14805550139",
+   "personality": "In and out before your 8 a.m.",
+   "intro": "A compact studio club for people with a tight morning. A strength floor with racks, two studios, a cycle studio and a recovery lounge. No pool, no courts, no kids club.",
+   "amenities": [
+    "Strength floor",
+    "2 studios",
+    "Cycle studio",
+    "Recovery lounge"
+   ],
+   "signature": [
+    "Strength floor",
+    "Cycle studio",
+    "Recovery lounge"
+   ],
+   "has": {
+    "pool": false,
+    "courts": false,
+    "cycling": true,
+    "kids": false,
+    "recovery": true,
+    "classes": true
+   },
+   "map": {
+    "x": 46,
+    "y": 52
+   },
+   "miles": 9.8,
+   "photo": "Downtown — strength floor at 7 a.m., window light across the racks",
+   "tone": "night",
+   "opened": 2020,
+   "parking": "Two hours free in the Center St garage. Bike racks at the door.",
+   "access": "Step-free entrance on Main St. Lift to the second-floor studios.",
+   "studios": 2,
+   "busyness": 4,
+   "extras": "—"
+  },
+  {
+   "slug": "gilbert-val-vista",
+   "name": "Gilbert – Val Vista",
+   "short": "Val Vista",
+   "city": "Gilbert",
+   "type": "Full club",
+   "sqFt": 60000,
+   "cross": "Val Vista Dr & Warner Rd",
+   "zip": "85233",
+   "phone": "(480) 555-0142",
+   "tel": "+14805550142",
+   "personality": "Swim school, courts, and a kids club that kids ask for.",
+   "intro": "A 25-yd lap pool, a splash pad and swim school, two basketball courts, four pickleball courts, a recovery suite and a kids club. The place for a family that trains in shifts.",
+   "amenities": [
+    "25-yd lap pool",
+    "Splash pad",
+    "Swim school",
+    "2 basketball courts",
+    "4 pickleball courts",
+    "Recovery suite",
+    "Kids club",
+    "3 studios + cycle studio"
+   ],
+   "signature": [
+    "25-yd lap pool",
+    "Splash pad",
+    "Kids club"
+   ],
+   "has": {
+    "pool": true,
+    "courts": true,
+    "cycling": true,
+    "kids": true,
+    "recovery": true,
+    "classes": true
+   },
+   "map": {
+    "x": 58,
+    "y": 74
+   },
+   "miles": 1.7,
+   "photo": "Val Vista — kids at the splash pad edge with a parent, pool behind, East Valley morning sun",
+   "tone": "gold",
+   "opened": 2022,
+   "parking": "Free lot on the east side. Drop-off lane at the kids club door.",
+   "access": "Step-free entrance on the north side. Accessible changing rooms.",
+   "lanes": 6,
+   "courts": {
+    "pickleball": 4,
+    "basketball": 2
+   },
+   "studios": 3,
+   "busyness": 3,
+   "extras": "Splash pad, swim school"
+  },
+  {
+   "slug": "gilbert-heritage",
+   "name": "Gilbert – Heritage",
+   "short": "Heritage",
+   "city": "Gilbert",
+   "type": "Studio club",
+   "sqFt": 22000,
+   "cross": "Gilbert Rd & Page Ave",
+   "zip": "85234",
+   "phone": "(480) 555-0156",
+   "tel": "+14805550156",
+   "personality": "Lifting platforms and a rooftop at golden hour.",
+   "intro": "A studio club built around lifting. Olympic platforms, a strength floor, two studios, a cycle studio, a recovery lounge and a rooftop mobility deck. No pool, no courts.",
+   "amenities": [
+    "Strength floor",
+    "Olympic lifting platforms",
+    "2 studios",
+    "Cycle studio",
+    "Recovery lounge",
+    "Rooftop mobility deck"
+   ],
+   "signature": [
+    "Olympic platforms",
+    "Rooftop mobility deck",
+    "Recovery lounge"
+   ],
+   "has": {
+    "pool": false,
+    "courts": false,
+    "cycling": true,
+    "kids": false,
+    "recovery": true,
+    "classes": true
+   },
+   "map": {
+    "x": 38,
+    "y": 82
+   },
+   "miles": 4.2,
+   "photo": "Heritage — rooftop mobility deck at golden hour, one member mid-stretch",
+   "tone": "plum",
+   "opened": 2024,
+   "parking": "Free lot behind the building. Rooftop is reached by lift or stairs.",
+   "access": "Step-free entrance on Gilbert Rd. Lift to the rooftop deck.",
+   "studios": 2,
+   "busyness": 2,
+   "extras": "Olympic platforms, rooftop mobility deck"
+  }
+ ],
+ "amenityFilters": [
+  {
+   "key": "pool",
+   "label": "Pool"
+  },
+  {
+   "key": "courts",
+   "label": "Courts"
+  },
+  {
+   "key": "cycling",
+   "label": "Cycling"
+  },
+  {
+   "key": "kids",
+   "label": "Kids club"
+  },
+  {
+   "key": "recovery",
+   "label": "Recovery"
+  },
+  {
+   "key": "classes",
+   "label": "Group classes"
+  }
+ ],
+ "coaches": [
+  {
+   "slug": "marisol-vega",
+   "name": "Marisol Vega",
+   "first": "Marisol",
+   "credential": "CSCS · Spinning instructor",
+   "specialties": [
+    "Cycle",
+    "Strength basics",
+    "Return to training"
+   ],
+   "clubs": [
+    "gilbert-val-vista",
+    "mesa-dobson"
+   ],
+   "teaches": [
+    "climb-cycle",
+    "rhythm-ride",
+    "endurance-60",
+    "barbell-basics"
+   ],
+   "favorite": "Climb Cycle",
+   "bio": "Marisol came to coaching from competitive cycling. She sets every bike herself and keeps the room kind. Quiet hands, strong legs.",
+   "quote": "Nobody climbs the same hill. I help you find your gear.",
+   "years": 9,
+   "pt": true,
+   "tone": "copper"
+  },
+  {
+   "slug": "devon-hart",
+   "name": "Devon Hart",
+   "first": "Devon",
+   "credential": "NSCA-CPT · Olympic lifting",
+   "specialties": [
+    "Strength",
+    "Olympic lifting"
+   ],
+   "clubs": [
+    "gilbert-heritage",
+    "mesa-downtown",
+    "gilbert-val-vista",
+    "mesa-dobson"
+   ],
+   "teaches": [
+    "rib-rack-strength",
+    "olympic-lifting-club",
+    "switchback-hiit",
+    "kettlebell-flow"
+   ],
+   "favorite": "Olympic Lifting Club",
+   "bio": "Devon coaches the platforms at Heritage. He teaches the pull first and the load last, and he writes down your numbers.",
+   "quote": "Technique is the cheapest plate you can add.",
+   "years": 11,
+   "pt": true,
+   "tone": "night"
+  },
+  {
+   "slug": "imani-brooks",
+   "name": "Imani Brooks",
+   "first": "Imani",
+   "credential": "RYT-500",
+   "specialties": [
+    "Mind & Body",
+    "Return to training",
+    "Mobility"
+   ],
+   "clubs": [
+    "gilbert-val-vista",
+    "mesa-dobson"
+   ],
+   "teaches": [
+    "desert-flow-yoga",
+    "mat-pilates",
+    "mobility-30",
+    "breathwork"
+   ],
+   "favorite": "Desert Flow Yoga",
+   "bio": "Imani teaches yoga, mobility and breathwork. She works with members who are returning after injury and never rushes a first week.",
+   "quote": "Slow is allowed here.",
+   "years": 12,
+   "pt": true,
+   "tone": "sage"
+  },
+  {
+   "slug": "luis-ortega",
+   "name": "Luis Ortega",
+   "first": "Luis",
+   "credential": "Swim coach · Red Cross lifeguard instructor",
+   "specialties": [
+    "Aqua",
+    "Youth"
+   ],
+   "clubs": [
+    "gilbert-val-vista",
+    "mesa-red-mountain"
+   ],
+   "teaches": [
+    "swim-school",
+    "lap-swim",
+    "masters-swim",
+    "aqua-fit"
+   ],
+   "favorite": "Swim School",
+   "bio": "Luis runs swim school at Val Vista. He has taught more than a thousand children to float, and a few of their parents.",
+   "quote": "Every kid floats. It just takes a good day.",
+   "years": 14,
+   "pt": false,
+   "tone": "teal"
+  },
+  {
+   "slug": "sam-okafor",
+   "name": "Sam Okafor",
+   "first": "Sam",
+   "credential": "NASM-CPT · Youth fitness",
+   "specialties": [
+    "Youth",
+    "Strength"
+   ],
+   "clubs": [
+    "gilbert-val-vista"
+   ],
+   "teaches": [
+    "teen-strength",
+    "barbell-basics",
+    "junior-pickleball"
+   ],
+   "favorite": "Teen Strength",
+   "bio": "Sam coaches Teen Strength. Form first, phones in lockers, and a spotter on every lift.",
+   "quote": "Teens do not need hype. They need a plan.",
+   "years": 7,
+   "pt": true,
+   "tone": "gold"
+  },
+  {
+   "slug": "tess-nakamura",
+   "name": "Tess Nakamura",
+   "first": "Tess",
+   "credential": "ACE-CPT · Group cycling",
+   "specialties": [
+    "Cycle",
+    "Conditioning"
+   ],
+   "clubs": [
+    "mesa-red-mountain"
+   ],
+   "teaches": [
+    "climb-cycle",
+    "endurance-60",
+    "bootcamp",
+    "canal-run-club"
+   ],
+   "favorite": "Endurance 60",
+   "bio": "Tess leads the 5:45 a.m. rides at Red Mountain and the Saturday run along the canal.",
+   "quote": "Show up. We will take it from there.",
+   "years": 8,
+   "pt": true,
+   "tone": "rose"
+  },
+  {
+   "slug": "ray-delgado",
+   "name": "Ray Delgado",
+   "first": "Ray",
+   "credential": "USAPA pickleball coach",
+   "specialties": [
+    "Court",
+    "Return to training"
+   ],
+   "clubs": [
+    "mesa-red-mountain",
+    "mesa-dobson"
+   ],
+   "teaches": [
+    "pickleball-open-play",
+    "pickleball-clinic",
+    "tennis-drills"
+   ],
+   "favorite": "Pickleball Clinic",
+   "bio": "Ray coaches pickleball and keeps the beginner court friendly. He plays four mornings a week himself.",
+   "quote": "Play more than you plan.",
+   "years": 10,
+   "pt": false,
+   "tone": "sand"
+  },
+  {
+   "slug": "nadia-kowalski",
+   "name": "Nadia Kowalski",
+   "first": "Nadia",
+   "credential": "DPT · Recovery coach",
+   "specialties": [
+    "Recovery",
+    "Return to training"
+   ],
+   "clubs": [
+    "mesa-dobson",
+    "gilbert-val-vista"
+   ],
+   "teaches": [
+    "stretch-and-release",
+    "compression",
+    "sauna-plunge"
+   ],
+   "favorite": "Stretch & Release",
+   "bio": "Nadia is a physical therapist who runs the recovery spaces. She helps members plan a first week back.",
+   "quote": "Rest is part of the plan, not a break from it.",
+   "years": 13,
+   "pt": true,
+   "tone": "plum"
+  }
+ ],
+ "faqs": [
+  {
+   "id": "card",
+   "group": "Getting started",
+   "q": "Do I need a card for a tour or a pass?",
+   "a": "No. Tours and the 3-day pass are free. We do not ask for a card."
+  },
+  {
+   "id": "bring",
+   "group": "Getting started",
+   "q": "What should I bring on my first visit?",
+   "a": "Photo ID, if you want a 3-day pass. Wear what you move in. Bring a water bottle. We have towels for Summit members."
+  },
+  {
+   "id": "injury",
+   "group": "Getting started",
+   "q": "I am new or coming back from an injury. Where do I start?",
+   "a": "Book a tour and tell us. We match you with a coach and an easy class. Many members start with Mobility 30 or Aqua Fit."
+  },
+  {
+   "id": "contract",
+   "group": "Memberships",
+   "q": "Is there a contract?",
+   "a": "No. Memberships are month to month."
+  },
+  {
+   "id": "cancel",
+   "group": "Memberships",
+   "q": "How do I cancel or freeze?",
+   "a": "Give 30 days' notice in the app or at the desk. A freeze costs $10 a month for 1 to 3 months."
+  },
+  {
+   "id": "fees",
+   "group": "Memberships",
+   "q": "What fees are there besides the monthly price?",
+   "a": "Enrollment is $0 during Fall climb (otherwise $49). A $49 annual facility fee is charged in March."
+  },
+  {
+   "id": "booking",
+   "group": "Memberships",
+   "q": "What are the booking rules?",
+   "a": "Book up to 7 days ahead (Summit: 9). Cancel free up to 2 hours before. Later is a late cancel. Three late cancels in 30 days pause booking for 3 days. Waitlists move up until 1 hour before class."
+  },
+  {
+   "id": "kids-ages",
+   "group": "Kids and teens",
+   "q": "What ages can use kids club?",
+   "a": "Ages 6 months to 12 years, in 2-hour blocks. A parent checks in at the same club and stays in the building."
+  },
+  {
+   "id": "teen",
+   "group": "Kids and teens",
+   "q": "Can my teen train here?",
+   "a": "Yes. Teens 13 to 17 can book classes marked Teen OK, such as Teen Strength. A parent signs the waiver and manages billing. Strength floor use without a coach starts at age 16. Sauna and cold plunge are for ages 18 and up."
+  },
+  {
+   "id": "age-limit",
+   "group": "Kids and teens",
+   "q": "Is there an age limit for members?",
+   "a": "Adults of any age can join. We have easy classes, a warm-water pool and coaches who work with older members."
+  }
+ ],
+ "faqHome": [
+  "card",
+  "contract",
+  "clubs",
+  "kids",
+  "injury"
+ ],
+ "homeFaq": [
+  {
+   "id": "faq-card",
+   "q": "Do I need a card for a tour or a pass?",
+   "a": "No. Tours and the 3-day pass are free and need no card."
+  },
+  {
+   "id": "faq-contract",
+   "q": "Is there a contract?",
+   "a": "No. Memberships are month to month. Cancel or freeze with 30 days' notice."
+  },
+  {
+   "id": "faq-clubs",
+   "q": "Can I use more than one club?",
+   "a": "Ridge and Summit work at all 5 clubs. Trailhead works at your home club."
+  },
+  {
+   "id": "faq-kids",
+   "q": "Is there something for my kids?",
+   "a": "Yes. Kids club at Mesa – Dobson, Mesa – Red Mountain and Gilbert – Val Vista."
+  },
+  {
+   "id": "faq-injury",
+   "q": "I am new or coming back from an injury. Where do I start?",
+   "a": "Book a tour and tell us. We will match you with a coach and an easy class."
+  }
+ ],
+ "testimonials": [
+  {
+   "quote": "I came back after knee surgery. Imani set me up in the warm pool and never rushed me.",
+   "who": "Daniel K.",
+   "goal": "Back to walking two miles",
+   "club": "Mesa – Dobson",
+   "caption": "Daniel — warm-water pool with a coach, waist-deep, calm"
+  },
+  {
+   "quote": "Swim school for my nine-year-old, a 6:00 a.m. class for me. Same building.",
+   "who": "Maya T.",
+   "goal": "Family of four",
+   "club": "Gilbert – Val Vista",
+   "caption": "Maya — poolside at Val Vista, towel over one shoulder"
+  },
+  {
+   "quote": "Four mornings of pickleball a week. Linda books the courts. I book the coffee.",
+   "who": "Ron P.",
+   "goal": "Pickleball, 4 mornings a week",
+   "club": "Mesa – Red Mountain",
+   "caption": "Ron — Red Mountain court 3, paddle in hand, laughing"
+  },
+  {
+   "quote": "Platforms free at 6 p.m. most nights. That is why I joined.",
+   "who": "Priya S.",
+   "goal": "Lifting 5 days a week",
+   "club": "Mesa – Downtown",
+   "caption": "Priya — chalk on her hands, Downtown strength floor"
+  }
+ ],
+ "clubQuotes": [
+  {
+   "quote": "Swim school got my daughter from 'no' to Level 3 in one summer.",
+   "who": "Maya T.",
+   "goal": "Family of four"
+  },
+  {
+   "quote": "I lift at 5:00 a.m. and the cycle studio is full at 6:00. Both are good problems.",
+   "who": "Jess R.",
+   "goal": "Ridge member"
+  },
+  {
+   "quote": "Teen Strength gave my son a place that is not a screen.",
+   "who": "Carlos M.",
+   "goal": "Parent"
+  }
+ ],
+ "journal": [
+  {
+   "slug": "your-first-climb-cycle",
+   "title": "Your first Climb Cycle: five things to know",
+   "dek": "Heavy load, short hills and a coach calling the numbers. Here is how to get through your first 45 minutes.",
+   "cat": "Train",
+   "author": "marisol-vega",
+   "date": "Oct 12, 2026",
+   "iso": "2026-10-12",
+   "min": 6,
+   "tone": "sage",
+   "caption": "Cycle studio at Val Vista, riders mid-climb, 6 a.m.",
+   "cls": "climb-cycle",
+   "sections": [
+    [
+     "Arrive early",
+     "Show up 10 minutes before class. A coach sets your seat and handlebars. Ask for the set-up, even if you think you know it. A bike that fits makes the hour easier."
+    ],
+    [
+     "Pick a load you can talk over",
+     "The coach calls out loads from 1 to 10. Start at 3 or 4. You can always add. You cannot easily take away halfway up a hill."
+    ],
+    [
+     "Stand when you are told, not before",
+     "Standing climbs are short. Sit when your legs say sit. Nobody is watching your cadence."
+    ],
+    [
+     "Drink early",
+     "It is Arizona. Water before class, a sip every few minutes, and more after."
+    ],
+    [
+     "Come back on Thursday",
+     "The second class is easier than the first. The third is where it starts to feel like yours."
+    ]
+   ]
+  },
+  {
+   "slug": "a-week-back-after-surgery",
+   "title": "A first week back after surgery",
+   "dek": "What a coach looks for, what to skip, and why the warm pool is a good first stop.",
+   "cat": "Train",
+   "author": "imani-brooks",
+   "date": "Oct 5, 2026",
+   "iso": "2026-10-05",
+   "min": 7,
+   "tone": "teal",
+   "caption": "Warm-water pool at Dobson, a member and a coach",
+   "cls": "mobility-30",
+   "sections": [
+    [
+     "Ask your surgeon first",
+     "Get a clear yes, and ask what to avoid. Bring the notes to your tour. A coach can read a surgeon's note and turn it into a first week."
+    ],
+    [
+     "Start in the warm pool",
+     "The Dobson therapy pool stays at 90 to 92°F. The water holds your weight, so a sore knee or hip can move without load. Ten easy minutes is a good first day."
+    ],
+    [
+     "Pick Mobility 30, not a hard class",
+     "Thirty minutes of joint prep at intensity 1. You choose the range. Nobody needs you to touch your toes."
+    ],
+    [
+     "Keep a short log",
+     "Write one line a day: what you did, how it felt the next morning. Your coach reads it before the second session."
+    ],
+    [
+     "Add one thing a week",
+     "A second class, a longer swim, a little load. If a week feels like too much, repeat it. That is allowed."
+    ]
+   ]
+  },
+  {
+   "slug": "what-to-eat-before-a-6-am-class",
+   "title": "What to eat before a 6:00 a.m. class",
+   "dek": "A banana, some salt, and water. A short guide for people who do not wake up hungry.",
+   "cat": "Eat and recover",
+   "author": "nadia-kowalski",
+   "date": "Sep 28, 2026",
+   "iso": "2026-09-28",
+   "min": 4,
+   "tone": "gold",
+   "caption": "Café counter at Dobson, early morning",
+   "cls": "rhythm-ride",
+   "sections": [
+    [
+     "If you can eat, eat small",
+     "Half a banana or a slice of toast, 30 to 45 minutes before class. Skip anything heavy or fried."
+    ],
+    [
+     "If you cannot, drink",
+     "A glass of water and a pinch of salt is enough for a 45-minute class. Your body has fuel for it."
+    ],
+    [
+     "Coffee is fine",
+     "One cup is fine. Two on an empty stomach and a hard interval class is a bad mix."
+    ],
+    [
+     "Eat after",
+     "Within an hour, add protein and something with carbohydrate. Eggs and fruit. Yogurt and oats. The Dobson café opens at 6:00 a.m."
+    ],
+    [
+     "Watch the heat",
+     "From June to September, add a second glass of water to your morning. Sweat in a dry climate disappears fast."
+    ]
+   ]
+  },
+  {
+   "slug": "packing-for-kids-club",
+   "title": "Packing for kids club, in 5 minutes",
+   "dek": "Socks, a water bottle and a note about allergies. Here is the rest.",
+   "cat": "Families",
+   "author": "luis-ortega",
+   "date": "Sep 20, 2026",
+   "iso": "2026-09-20",
+   "min": 3,
+   "tone": "rose",
+   "caption": "Kids club check-in door, Val Vista",
+   "cls": "kids-club",
+   "sections": [
+    [
+     "Socks and a water bottle",
+     "Children play barefoot or in socks. Label the bottle. We refill it."
+    ],
+    [
+     "One change of clothes",
+     "Spills and splash pad days happen. A small bag with a dry set saves a bad evening."
+    ],
+    [
+     "Tell us about allergies",
+     "Add allergy and medical notes in the app before you arrive. The staff read them at check-in."
+    ],
+    [
+     "Check in at the same club",
+     "Kids club blocks are 2 hours, and you stay in the building. An unclaimed block is released 15 minutes after it starts."
+    ],
+    [
+     "Plan your own two hours",
+     "Book a class that fits inside the block, with time to shower. Most parents pick a 45-minute class and a swim."
+    ]
+   ]
+  },
+  {
+   "slug": "heritage-rooftop-deck-open",
+   "title": "The Heritage rooftop deck is open to all members",
+   "dek": "Mobility sessions at golden hour, Tuesday to Saturday.",
+   "cat": "Club news",
+   "author": "devon-hart",
+   "date": "Sep 12, 2026",
+   "iso": "2026-09-12",
+   "min": 2,
+   "tone": "plum",
+   "caption": "Rooftop mobility deck at golden hour",
+   "cls": "mobility-30",
+   "sections": [
+    [
+     "What opened",
+     "The rooftop mobility deck at Gilbert – Heritage is open to every member, not only Summit. Mats, bands and foam rollers are up there."
+    ],
+    [
+     "When to go",
+     "Mobility 30 runs at golden hour, Tuesday to Saturday. In October the light is soft from about 5:30 p.m."
+    ],
+    [
+     "What to bring",
+     "Water and a layer. The deck is in the open air and it cools quickly after the sun drops."
+    ],
+    [
+     "Access",
+     "A lift and stairs reach the deck. Both are step-free from the lobby."
+    ],
+    [
+     "Rules",
+     "No lifting on the deck. Phones stay in your pocket during class. The deck closes at 8:00 p.m."
+    ]
+   ]
+  },
+  {
+   "slug": "pickleball-in-the-heat",
+   "title": "Pickleball in the heat: a short guide",
+   "dek": "Play early, drink before you are thirsty, and use the shade sails.",
+   "cat": "Train",
+   "author": "ray-delgado",
+   "date": "Aug 30, 2026",
+   "iso": "2026-08-30",
+   "min": 5,
+   "tone": "copper",
+   "caption": "Red Mountain courts at 6:30 a.m.",
+   "cls": "pickleball-open-play",
+   "sections": [
+    [
+     "Play before 9:00 a.m.",
+     "From June to September the courts are comfortable before 9:00 a.m. and hard work after 11:00. Book the early slot."
+    ],
+    [
+     "Drink before you are thirsty",
+     "A cup of water every two games. By the time you are thirsty you are already behind."
+    ],
+    [
+     "Use the shade",
+     "Red Mountain's courts have shade at the north end after 7:30 a.m. Swap ends so nobody plays in the sun all game."
+    ],
+    [
+     "Dress for it",
+     "Light colors, a hat between points, and sunscreen on your ears. Bring a spare shirt for the end of a long session."
+    ],
+    [
+     "Know when to stop",
+     "Dizziness, a headache or cramps mean sit down and drink. Tell the desk. The recovery lounge is a good place to cool off."
+    ]
+   ]
+  }
+ ],
+ "journalCats": [
+  "All",
+  "Train",
+  "Eat and recover",
+  "Families",
+  "Club news"
+ ],
+ "jobs": [
+  {
+   "slug": "group-fitness-coach-dobson",
+   "title": "Group fitness coach",
+   "club": "Mesa – Dobson",
+   "dept": "Coaching",
+   "type": "Part-time",
+   "pay": "$22–$30 an hour"
+  },
+  {
+   "slug": "lifeguard-red-mountain",
+   "title": "Lifeguard",
+   "club": "Mesa – Red Mountain",
+   "dept": "Aquatics",
+   "type": "Seasonal",
+   "pay": "$18–$22 an hour"
+  },
+  {
+   "slug": "kids-club-lead-val-vista",
+   "title": "Kids club lead",
+   "club": "Gilbert – Val Vista",
+   "dept": "Kids club",
+   "type": "Full-time",
+   "pay": "$20–$25 an hour"
+  },
+  {
+   "slug": "front-desk-downtown",
+   "title": "Front desk associate",
+   "club": "Mesa – Downtown",
+   "dept": "Front desk",
+   "type": "Part-time",
+   "pay": "$17–$20 an hour"
+  },
+  {
+   "slug": "swim-coach-val-vista",
+   "title": "Swim school coach",
+   "club": "Gilbert – Val Vista",
+   "dept": "Aquatics",
+   "type": "Part-time",
+   "pay": "$21–$28 an hour"
+  },
+  {
+   "slug": "strength-coach-heritage",
+   "title": "Strength coach",
+   "club": "Gilbert – Heritage",
+   "dept": "Coaching",
+   "type": "Full-time",
+   "pay": "$24–$34 an hour"
+  },
+  {
+   "slug": "facilities-tech-dobson",
+   "title": "Facilities technician",
+   "club": "Mesa – Dobson",
+   "dept": "Facilities",
+   "type": "Full-time",
+   "pay": "$23–$29 an hour"
+  }
+ ],
+ "legalPages": [
+  {
+   "slug": "privacy",
+   "title": "Privacy policy",
+   "short": true
+  },
+  {
+   "slug": "terms",
+   "title": "Terms of use",
+   "short": true
+  },
+  {
+   "slug": "membership-agreement",
+   "title": "Membership agreement",
+   "short": true
+  },
+  {
+   "slug": "waiver",
+   "title": "Liability waiver"
+  },
+  {
+   "slug": "kids-club-policy",
+   "title": "Kids club policy"
+  },
+  {
+   "slug": "cookies",
+   "title": "Cookie notice"
+  },
+  {
+   "slug": "sms-terms",
+   "title": "SMS terms"
+  },
+  {
+   "slug": "accessibility",
+   "title": "Accessibility statement"
+  },
+  {
+   "slug": "guest-policy",
+   "title": "Guest policy"
+  }
+ ],
+ "plans": [
+  {
+   "slug": "trailhead",
+   "name": "Trailhead",
+   "price": 54,
+   "ribs": 1,
+   "bestFor": "Best for: one club, close to home.",
+   "features": [
+    "Classes and pools at your home club",
+    "Book in the app 7 days ahead",
+    "Month to month"
+   ],
+   "compact": [
+    "One home club",
+    "Classes and pools",
+    "7-day booking"
+   ]
+  },
+  {
+   "slug": "ridge",
+   "name": "Ridge",
+   "price": 79,
+   "ribs": 3,
+   "badge": "Most popular",
+   "bestFor": "Best for: using every club.",
+   "features": [
+    "All 5 clubs",
+    "All classes",
+    "Courts, book 3 days ahead",
+    "1 guest pass a month"
+   ],
+   "compact": [
+    "All 5 clubs",
+    "Courts included",
+    "1 guest pass a month"
+   ]
+  },
+  {
+   "slug": "summit",
+   "name": "Summit",
+   "price": 129,
+   "ribs": 5,
+   "bestFor": "Best for: recovery and coaching.",
+   "features": [
+    "Everything in Ridge",
+    "Recovery suite and lounge",
+    "Book 9 days ahead",
+    "4 guest passes a month",
+    "Towel service",
+    "1 PT intro a quarter"
+   ],
+   "compact": [
+    "Everything in Ridge",
+    "Recovery suite",
+    "9-day booking"
+   ]
+  }
+ ],
+ "packs": [
+  {
+   "n": 4,
+   "price": 276,
+   "each": 69
+  },
+  {
+   "n": 8,
+   "price": 520,
+   "each": 65
+  },
+  {
+   "n": 12,
+   "price": 732,
+   "each": 61
+  }
+ ],
+ "comparison": [
+  {
+   "row": "Clubs",
+   "vals": [
+    "1 home club",
+    "All 5",
+    "All 5"
+   ]
+  },
+  {
+   "row": "Group classes",
+   "vals": [
+    "At home club",
+    "All",
+    "All"
+   ]
+  },
+  {
+   "row": "Pools",
+   "vals": [
+    "At home club",
+    "All 3 pools",
+    "All 3 pools"
+   ]
+  },
+  {
+   "row": "Courts (3 days ahead)",
+   "vals": [
+    "–",
+    "Included",
+    "Included"
+   ]
+  },
+  {
+   "row": "Booking window",
+   "vals": [
+    "7 days",
+    "7 days",
+    "9 days"
+   ]
+  },
+  {
+   "row": "Guest passes a month",
+   "vals": [
+    "–",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "row": "Recovery suite",
+   "vals": [
+    "–",
+    "–",
+    "Included"
+   ]
+  },
+  {
+   "row": "Towel service",
+   "vals": [
+    "–",
+    "–",
+    "Included"
+   ]
+  },
+  {
+   "row": "PT intro session",
+   "vals": [
+    "–",
+    "–",
+    "1 a quarter"
+   ]
+  },
+  {
+   "row": "Family add-on",
+   "vals": [
+    "+$39 adult, +$19 child",
+    "+$39 adult, +$19 child",
+    "+$39 adult, +$19 child"
+   ]
+  },
+  {
+   "row": "Kids club for children",
+   "vals": [
+    "With add-on",
+    "With add-on",
+    "With add-on"
+   ]
+  },
+  {
+   "row": "Freeze",
+   "vals": [
+    "$10/mo, 1–3 months",
+    "$10/mo, 1–3 months",
+    "$10/mo, 1–3 months"
+   ]
+  }
+ ]
+}
