@@ -19,6 +19,6 @@ All three apps use one Supabase project. See `supabase/README.md` for setup and 
 1. Copy your Supabase keys into `.env.local` in the repo root, `marketing-site/`, and `web-app/`.
 2. For iOS, copy `ios/Config/Secrets.example.xcconfig` to `ios/Config/Secrets.xcconfig` and fill in the values.
 3. Run `pnpm install` in `marketing-site/` and in `web-app/`.
-4. Start a dev server with `pnpm dev` in the app folder. Or use `.claude/launch.json` from Claude Code.
+4. Start a dev server with `pnpm dev` in the app folder.
 
 Do not commit `.env*` files or `Secrets.xcconfig`. The `.gitignore` blocks them.
